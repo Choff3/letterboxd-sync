@@ -10,7 +10,7 @@ def plex_watchlist_add(letterboxdFilms):
     print(letterboxdFilms)
 
     TOKEN = os.getenv('PLEX_TOKEN')
-    SERVER_URL = os.getenv('PLEX_IP')
+    SERVER_URL = os.getenv('PLEX_HOST')
 
     server = PlexServer(SERVER_URL, TOKEN)
 
@@ -21,7 +21,5 @@ def plex_watchlist_add(letterboxdFilms):
             plexAccount.addToWatchlist(server.library.section('Movies').get(film[0],director=film[1],))
         except:
             missing_films.append(film)
-
-    print(plexAccount.watchlist)
 
     return missing_films

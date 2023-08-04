@@ -18,8 +18,6 @@ def scrape_list(list_link):
             return None
         
         films = table.find_all('li')
-
-        print(films)
         
         for film in tqdm(films):
             

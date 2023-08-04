@@ -1,5 +1,6 @@
 from list_scraper import *
 from plex_watchlist import *
+from radarr_monitor import *
 import os
 from dotenv import load_dotenv
 
@@ -15,7 +16,9 @@ def main():
 
     films = scrape_list(list_url)
 
-    plex_watchlist_add(films)
+    missing_films = plex_watchlist_add(films)
+
+    radarr_monitor_add(missing_films)
 
 if __name__ == "__main__":
     main()
