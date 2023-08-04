@@ -18,4 +18,4 @@ def radarr_monitor_add(missing_films):
 
     # Get and print TV Shows
 
-    print(radarr.get_movie())
+    # print(radarr.get_movie())

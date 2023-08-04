@@ -1,5 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
+import re
 from tqdm import tqdm
 
 def scrape_list(list_link):
@@ -30,6 +31,11 @@ def scrape_list(list_link):
             film_soup = BeautifulSoup(filmget.content, 'html.parser')
 
             director = film_soup.find('meta', attrs={'name':'twitter:data1'}).attrs['content']
+
+            # TODO: Parse the return of below to get the TMDB ID. Then use that to add movies to Plex watchlist and Radarr.
+            tmdb = film_soup.find_all("a", href=re.compile(r"https://www.themoviedb.org/movie/"))
+
+            print(tmdb)
 
             parsed_film = (title,director)
             watchlist.append(parsed_film)

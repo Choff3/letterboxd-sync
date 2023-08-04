@@ -7,8 +7,6 @@ def plex_watchlist_add(letterboxdFilms):
 
     missing_films = []
 
-    print(letterboxdFilms)
-
     TOKEN = os.getenv('PLEX_TOKEN')
     SERVER_URL = os.getenv('PLEX_HOST')
 
