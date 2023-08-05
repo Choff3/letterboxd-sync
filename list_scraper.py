@@ -33,7 +33,10 @@ def scrape_list(list_link):
             director = film_soup.find('meta', attrs={'name':'twitter:data1'}).attrs['content']
 
             # TODO: Parse the return of below to get the TMDB ID. Then use that to add movies to Plex watchlist and Radarr.
-            tmdb = film_soup.find_all("a", href=re.compile(r"https://www.themoviedb.org/movie/"))
+            # tmdb = film_soup.find_all("a", href=re.compile(r"https://www.themoviedb.org/movie/"))
+            tmdb = film_soup.find_all("a", href=re.compile(r'^https:\/\/www\.themoviedb\.org\/movie\/([0-9]+)\/'))
+            # result = re.search('^https:\/\/www\.themoviedb\.org\/movie\/([0-9]+)\/', s)
+
 
             print(tmdb)
 
