@@ -2,11 +2,8 @@ from list_scraper import *
 from plex_watchlist import *
 from radarr_monitor import *
 import os
-from dotenv import load_dotenv
 
 def main():
-
-    load_dotenv()
 
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
     

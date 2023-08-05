@@ -1,6 +1,5 @@
 from pyarr import RadarrAPI
 import os
-from dotenv import load_dotenv
 
 def radarr_monitor_add(missing_films):
 

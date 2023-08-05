@@ -1,7 +1,6 @@
 from plexapi.myplex import MyPlexAccount
 from plexapi.server import PlexServer
 import os
-from dotenv import load_dotenv
 
 def plex_watchlist_add(letterboxdFilms):
 
