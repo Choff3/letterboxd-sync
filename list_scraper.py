@@ -39,5 +39,4 @@ def scrape_list(list_link):
         else:
             list_link = 'https://letterboxd.com/' + next['href']
             
-    print(watchlist)
     return watchlist

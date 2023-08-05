@@ -15,7 +15,8 @@ def plex_watchlist_add(letterboxdFilms):
 
     for film in letterboxdFilms:
         try:
-            plexAccount.addToWatchlist(server.library.section('Movies').get(film[0],director=film[1],))
+            plex_film = server.library.section('Movies').getGuid('tmdb://'+film)
+            plexAccount.addToWatchlist(plex_film)
         except:
             missing_films.append(film)
 
