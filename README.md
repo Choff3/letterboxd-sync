@@ -21,3 +21,7 @@ docker run --rm \
     -e RADARR_HOST='http://{Radarr instance IP}:7878' \
     choff3/letterboxd-sync
 ```
+
+## Acknowledgments
+
+Thanks to L-Dot for the Letterboxd list scraper. https://github.com/L-Dot/Letterboxd-list-scraper
