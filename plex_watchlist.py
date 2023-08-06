@@ -2,16 +2,13 @@ from plexapi.myplex import MyPlexAccount
 from plexapi.server import PlexServer
 import os
 
-def plex_watchlist_add(letterboxdFilms):
+def plex_watchlist_add(letterboxdFilms,plex_host,plex_token):
 
     missing_films = []
 
-    TOKEN = os.getenv('PLEX_TOKEN')
-    SERVER_URL = os.getenv('PLEX_HOST')
+    server = PlexServer(plex_host, plex_token)
 
-    server = PlexServer(SERVER_URL, TOKEN)
-
-    plexAccount = MyPlexAccount(token=TOKEN)
+    plexAccount = MyPlexAccount(token=plex_token)
 
     for film in letterboxdFilms:
         try:
