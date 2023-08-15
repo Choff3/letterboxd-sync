@@ -22,7 +22,9 @@ def main():
     # Add films to Radarr
     radarr_host = os.getenv('RADARR_HOST')
     radarr_api = os.getenv('RADARR_TOKEN')
-    if radarr_api != '' and radarr_host != '':
+    if radarr_api == '' or radarr_host == '' or not radarr_films:
+        print("Skipping Radarr")
+    else:
         radarr_monitor_add(radarr_films,radarr_host,radarr_api)
 
 if __name__ == "__main__":
