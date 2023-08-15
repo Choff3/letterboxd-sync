@@ -10,8 +10,6 @@ def scrape_list(list_link):
     while True:
         list_page = requests.get(list_link)
         
-        if list_page.status_code != 200:
-            encounter_error("")
         soup = BeautifulSoup(list_page.content, 'html.parser')
         
         table = soup.find('ul', class_='poster-list')
