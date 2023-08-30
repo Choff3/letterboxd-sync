@@ -13,10 +13,16 @@ def plex_watchlist_add(letterboxdFilms,plex_host,plex_token):
     for film in letterboxdFilms:
         try:
             plex_film = server.library.section('Movies').getGuid('tmdb://'+film)
+        except:
+            print("tmdb://"+film+" not available in Plex")
+            missing_films.append(film)
+            continue
+        try:
             plexAccount.addToWatchlist(plex_film)
             print("Added "+plex_film.guids[1].id+" to Plex watchlist")
         except:
-            missing_films.append(film)
+            print("tmdb://"+film+" already on watchlist")
+            continue
 
     plexWatchlist = plexAccount.watchlist()
 
