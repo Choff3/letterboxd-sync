@@ -4,6 +4,7 @@ import re
 from tqdm import tqdm
 
 def scrape_list(list_link):
+    print("Scraping "+list_link)
 
     watchlist = []
 

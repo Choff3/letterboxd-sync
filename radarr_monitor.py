@@ -15,5 +15,6 @@ def radarr_monitor_add(radarr_films,host_url,api_key):
             movie["searchOnAdd"] = True
 
             requests.post(host_url+'/api/v3/movie', params={"apikey": api_key}, json=movie)
+            print("Monitored tmdb://"+tmdbid+" on Radarr")
         except:
-            print("Movie not added to Radarr.")
+            print("tmdb://"+tmdbid+" not added to Radarr")

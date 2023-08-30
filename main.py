@@ -17,6 +17,7 @@ def main():
     if plex_token != '' and plex_host != '':
         radarr_films = plex_watchlist_add(films,plex_host,plex_token)
     else:
+        print("Skipping Plex")
         radarr_films = films
 
     # Add films to Radarr
