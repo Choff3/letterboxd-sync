@@ -1,0 +1,590 @@
+{
+  "memories-of-murder": {
+    "film_id": "45312",
+    "film_name": null,
+    "film_slug": "memories-of-murder",
+    "film_link": null,
+    "poster_url": "/film/memories-of-murder/image-150/"
+  },
+  "american-graffiti": {
+    "film_id": "51314",
+    "film_name": null,
+    "film_slug": "american-graffiti",
+    "film_link": null,
+    "poster_url": "/film/american-graffiti/image-150/"
+  },
+  "sunset-boulevard": {
+    "film_id": "51522",
+    "film_name": null,
+    "film_slug": "sunset-boulevard",
+    "film_link": null,
+    "poster_url": "/film/sunset-boulevard/image-150/"
+  },
+  "fried-green-tomatoes": {
+    "film_id": "50908",
+    "film_name": null,
+    "film_slug": "fried-green-tomatoes",
+    "film_link": null,
+    "poster_url": "/film/fried-green-tomatoes/image-150/"
+  },
+  "intermission": {
+    "film_id": "41303",
+    "film_name": null,
+    "film_slug": "intermission",
+    "film_link": null,
+    "poster_url": "/film/intermission/image-150/"
+  },
+  "the-snapper": {
+    "film_id": "44383",
+    "film_name": null,
+    "film_slug": "the-snapper",
+    "film_link": null,
+    "poster_url": "/film/the-snapper/image-150/"
+  },
+  "my-left-foot-the-story-of-christy-brown": {
+    "film_id": "46488",
+    "film_name": null,
+    "film_slug": "my-left-foot-the-story-of-christy-brown",
+    "film_link": null,
+    "poster_url": "/film/my-left-foot-the-story-of-christy-brown/image-150/"
+  },
+  "master-and-commander-the-beginning": {
+    "film_id": "837596",
+    "film_name": null,
+    "film_slug": "master-and-commander-the-beginning",
+    "film_link": null,
+    "poster_url": "/film/master-and-commander-the-beginning/image-150/"
+  },
+  "pavements": {
+    "film_id": "958822",
+    "film_name": null,
+    "film_slug": "pavements",
+    "film_link": null,
+    "poster_url": "/film/pavements/image-150/"
+  },
+  "wall-street": {
+    "film_id": "46002",
+    "film_name": null,
+    "film_slug": "wall-street",
+    "film_link": null,
+    "poster_url": "/film/wall-street/image-150/"
+  },
+  "michael-collins": {
+    "film_id": "50810",
+    "film_name": null,
+    "film_slug": "michael-collins",
+    "film_link": null,
+    "poster_url": "/film/michael-collins/image-150/"
+  },
+  "the-guard": {
+    "film_id": "53282",
+    "film_name": null,
+    "film_slug": "the-guard",
+    "film_link": null,
+    "poster_url": "/film/the-guard/image-150/"
+  },
+  "the-jerk": {
+    "film_id": "48303",
+    "film_name": null,
+    "film_slug": "the-jerk",
+    "film_link": null,
+    "poster_url": "/film/the-jerk/image-150/"
+  },
+  "companion-2025": {
+    "film_id": "977172",
+    "film_name": null,
+    "film_slug": "companion-2025",
+    "film_link": null,
+    "poster_url": "/film/companion-2025/image-150/"
+  },
+  "palm-springs-2020": {
+    "film_id": "515467",
+    "film_name": null,
+    "film_slug": "palm-springs-2020",
+    "film_link": null,
+    "poster_url": "/film/palm-springs-2020/image-150/"
+  },
+  "blindspotting": {
+    "film_id": "420450",
+    "film_name": null,
+    "film_slug": "blindspotting",
+    "film_link": null,
+    "poster_url": "/film/blindspotting/image-150/"
+  },
+  "the-absent-minded-waiter": {
+    "film_id": "38609",
+    "film_name": null,
+    "film_slug": "the-absent-minded-waiter",
+    "film_link": null,
+    "poster_url": "/film/the-absent-minded-waiter/image-150/"
+  },
+  "stranger-by-the-lake": {
+    "film_id": "135044",
+    "film_name": null,
+    "film_slug": "stranger-by-the-lake",
+    "film_link": null,
+    "poster_url": "/film/stranger-by-the-lake/image-150/"
+  },
+  "indiana-jones-and-the-last-crusade": {
+    "film_id": "51961",
+    "film_name": null,
+    "film_slug": "indiana-jones-and-the-last-crusade",
+    "film_link": null,
+    "poster_url": "/film/indiana-jones-and-the-last-crusade/image-150/"
+  },
+  "in-the-mood-for-love": {
+    "film_id": "51309",
+    "film_name": null,
+    "film_slug": "in-the-mood-for-love",
+    "film_link": null,
+    "poster_url": "/film/in-the-mood-for-love/image-150/"
+  },
+  "popstar-never-stop-never-stopping": {
+    "film_id": "270476",
+    "film_name": null,
+    "film_slug": "popstar-never-stop-never-stopping",
+    "film_link": null,
+    "poster_url": "/film/popstar-never-stop-never-stopping/image-150/"
+  },
+  "adolescence-2025": {
+    "film_id": "1326828",
+    "film_name": null,
+    "film_slug": "adolescence-2025",
+    "film_link": null,
+    "poster_url": "/film/adolescence-2025/image-150/"
+  },
+  "miracle-1982": {
+    "film_id": "142090",
+    "film_name": null,
+    "film_slug": "miracle-1982",
+    "film_link": null,
+    "poster_url": "/film/miracle-1982/image-150/"
+  },
+  "casino": {
+    "film_id": "51593",
+    "film_name": null,
+    "film_slug": "casino",
+    "film_link": null,
+    "poster_url": "/film/casino/image-150/"
+  },
+  "when-harry-met-sally": {
+    "film_id": "51485",
+    "film_name": null,
+    "film_slug": "when-harry-met-sally",
+    "film_link": null,
+    "poster_url": "/film/when-harry-met-sally/image-150/"
+  },
+  "maid-in-manhattan": {
+    "film_id": "48055",
+    "film_name": null,
+    "film_slug": "maid-in-manhattan",
+    "film_link": null,
+    "poster_url": "/film/maid-in-manhattan/image-150/"
+  },
+  "i-saw-the-tv-glow": {
+    "film_id": "772230",
+    "film_name": null,
+    "film_slug": "i-saw-the-tv-glow",
+    "film_link": null,
+    "poster_url": "/film/i-saw-the-tv-glow/image-150/"
+  },
+  "lincoln": {
+    "film_id": "56522",
+    "film_name": null,
+    "film_slug": "lincoln",
+    "film_link": null,
+    "poster_url": "/film/lincoln/image-150/"
+  },
+  "the-silence-of-the-lambs": {
+    "film_id": "51782",
+    "film_name": null,
+    "film_slug": "the-silence-of-the-lambs",
+    "film_link": null,
+    "poster_url": "/film/the-silence-of-the-lambs/image-150/"
+  },
+  "the-wind-that-shakes-the-barley": {
+    "film_id": "51149",
+    "film_name": null,
+    "film_slug": "the-wind-that-shakes-the-barley",
+    "film_link": null,
+    "poster_url": "/film/the-wind-that-shakes-the-barley/image-150/"
+  },
+  "manchester-by-the-sea": {
+    "film_id": "263221",
+    "film_name": null,
+    "film_slug": "manchester-by-the-sea",
+    "film_link": null,
+    "poster_url": "/film/manchester-by-the-sea/image-150/"
+  },
+  "toy-story-2": {
+    "film_id": "51289",
+    "film_name": null,
+    "film_slug": "toy-story-2",
+    "film_link": null,
+    "poster_url": "/film/toy-story-2/image-150/"
+  },
+  "the-shape-of-water": {
+    "film_id": "333308",
+    "film_name": null,
+    "film_slug": "the-shape-of-water",
+    "film_link": null,
+    "poster_url": "/film/the-shape-of-water/image-150/"
+  },
+  "lady-vengeance": {
+    "film_id": "49257",
+    "film_name": null,
+    "film_slug": "lady-vengeance",
+    "film_link": null,
+    "poster_url": "/film/lady-vengeance/image-150/"
+  },
+  "werckmeister-harmonies": {
+    "film_id": "37507",
+    "film_name": null,
+    "film_slug": "werckmeister-harmonies",
+    "film_link": null,
+    "poster_url": "/film/werckmeister-harmonies/image-150/"
+  },
+  "13-assassins": {
+    "film_id": "7466",
+    "film_name": null,
+    "film_slug": "13-assassins",
+    "film_link": null,
+    "poster_url": "/film/13-assassins/image-150/"
+  },
+  "hard-eight": {
+    "film_id": "47913",
+    "film_name": null,
+    "film_slug": "hard-eight",
+    "film_link": null,
+    "poster_url": "/film/hard-eight/image-150/"
+  },
+  "the-passion-of-joan-of-arc": {
+    "film_id": "51372",
+    "film_name": null,
+    "film_slug": "the-passion-of-joan-of-arc",
+    "film_link": null,
+    "poster_url": "/film/the-passion-of-joan-of-arc/image-150/"
+  },
+  "wallace-gromit-vengeance-most-fowl": {
+    "film_id": "834561",
+    "film_name": null,
+    "film_slug": "wallace-gromit-vengeance-most-fowl",
+    "film_link": null,
+    "poster_url": "/film/wallace-gromit-vengeance-most-fowl/image-150/"
+  },
+  "the-tragedy-of-macbeth": {
+    "film_id": "519052",
+    "film_name": null,
+    "film_slug": "the-tragedy-of-macbeth",
+    "film_link": null,
+    "poster_url": "/film/the-tragedy-of-macbeth/image-150/"
+  },
+  "im-still-here-2024": {
+    "film_id": "901671",
+    "film_name": null,
+    "film_slug": "im-still-here-2024",
+    "film_link": null,
+    "poster_url": "/film/im-still-here-2024/image-150/"
+  },
+  "the-leopard": {
+    "film_id": "51167",
+    "film_name": null,
+    "film_slug": "the-leopard",
+    "film_link": null,
+    "poster_url": "/film/the-leopard/image-150/"
+  },
+  "the-last-duel-2021": {
+    "film_id": "544380",
+    "film_name": null,
+    "film_slug": "the-last-duel-2021",
+    "film_link": null,
+    "poster_url": "/film/the-last-duel-2021/image-150/"
+  },
+  "rashomon": {
+    "film_id": "51570",
+    "film_name": null,
+    "film_slug": "rashomon",
+    "film_link": null,
+    "poster_url": "/film/rashomon/image-150/"
+  },
+  "yojimbo": {
+    "film_id": "44925",
+    "film_name": null,
+    "film_slug": "yojimbo",
+    "film_link": null,
+    "poster_url": "/film/yojimbo/image-150/"
+  },
+  "the-housemaid": {
+    "film_id": "22577",
+    "film_name": null,
+    "film_slug": "the-housemaid",
+    "film_link": null,
+    "poster_url": "/film/the-housemaid/image-150/"
+  },
+  "mary-queen-of-scots-2018": {
+    "film_id": "389079",
+    "film_name": null,
+    "film_slug": "mary-queen-of-scots-2018",
+    "film_link": null,
+    "poster_url": "/film/mary-queen-of-scots-2018/image-150/"
+  },
+  "sense-and-sensibility": {
+    "film_id": "49232",
+    "film_name": null,
+    "film_slug": "sense-and-sensibility",
+    "film_link": null,
+    "poster_url": "/film/sense-and-sensibility/image-150/"
+  },
+  "far-from-the-madding-crowd-2015": {
+    "film_id": "175058",
+    "film_name": null,
+    "film_slug": "far-from-the-madding-crowd-2015",
+    "film_link": null,
+    "poster_url": "/film/far-from-the-madding-crowd-2015/image-150/"
+  },
+  "portrait-of-a-lady-on-fire": {
+    "film_id": "460830",
+    "film_name": null,
+    "film_slug": "portrait-of-a-lady-on-fire",
+    "film_link": null,
+    "poster_url": "/film/portrait-of-a-lady-on-fire/image-150/"
+  },
+  "shoplifters": {
+    "film_id": "435129",
+    "film_name": null,
+    "film_slug": "shoplifters",
+    "film_link": null,
+    "poster_url": "/film/shoplifters/image-150/"
+  },
+  "sunshine-2007": {
+    "film_id": "51110",
+    "film_name": null,
+    "film_slug": "sunshine-2007",
+    "film_link": null,
+    "poster_url": "/film/sunshine-2007/image-150/"
+  },
+  "solaris": {
+    "film_id": "51528",
+    "film_name": null,
+    "film_slug": "solaris",
+    "film_link": null,
+    "poster_url": "/film/solaris/image-150/"
+  },
+  "chicken-run": {
+    "film_id": "48033",
+    "film_name": null,
+    "film_slug": "chicken-run",
+    "film_link": null,
+    "poster_url": "/film/chicken-run/image-150/"
+  },
+  "a-grand-day-out": {
+    "film_id": "51587",
+    "film_name": null,
+    "film_slug": "a-grand-day-out",
+    "film_link": null,
+    "poster_url": "/film/a-grand-day-out/image-150/"
+  },
+  "the-bourne-identity-2002": {
+    "film_id": "50225",
+    "film_name": null,
+    "film_slug": "the-bourne-identity-2002",
+    "film_link": null,
+    "poster_url": "/film/the-bourne-identity-2002/image-150/"
+  },
+  "spirit-stallion-of-the-cimarron": {
+    "film_id": "47420",
+    "film_name": null,
+    "film_slug": "spirit-stallion-of-the-cimarron",
+    "film_link": null,
+    "poster_url": "/film/spirit-stallion-of-the-cimarron/image-150/"
+  },
+  "a-serious-man": {
+    "film_id": "44466",
+    "film_name": null,
+    "film_slug": "a-serious-man",
+    "film_link": null,
+    "poster_url": "/film/a-serious-man/image-150/"
+  },
+  "and-the-king-said-what-a-fantastic-machine": {
+    "film_id": "954485",
+    "film_name": null,
+    "film_slug": "and-the-king-said-what-a-fantastic-machine",
+    "film_link": null,
+    "poster_url": "/film/and-the-king-said-what-a-fantastic-machine/image-150/"
+  },
+  "ed-wood": {
+    "film_id": "51595",
+    "film_name": null,
+    "film_slug": "ed-wood",
+    "film_link": null,
+    "poster_url": "/film/ed-wood/image-150/"
+  },
+  "the-game": {
+    "film_id": "50168",
+    "film_name": null,
+    "film_slug": "the-game",
+    "film_link": null,
+    "poster_url": "/film/the-game/image-150/"
+  },
+  "little-shop-of-horrors": {
+    "film_id": "45907",
+    "film_name": null,
+    "film_slug": "little-shop-of-horrors",
+    "film_link": null,
+    "poster_url": "/film/little-shop-of-horrors/image-150/"
+  },
+  "the-prince-of-egypt": {
+    "film_id": "46778",
+    "film_name": null,
+    "film_slug": "the-prince-of-egypt",
+    "film_link": null,
+    "poster_url": "/film/the-prince-of-egypt/image-150/"
+  },
+  "blazing-saddles": {
+    "film_id": "45631",
+    "film_name": null,
+    "film_slug": "blazing-saddles",
+    "film_link": null,
+    "poster_url": "/film/blazing-saddles/image-150/"
+  },
+  "time-masters": {
+    "film_id": "37854",
+    "film_name": null,
+    "film_slug": "time-masters",
+    "film_link": null,
+    "poster_url": "/film/time-masters/image-150/"
+  },
+  "cinema-paradiso": {
+    "film_id": "45493",
+    "film_name": null,
+    "film_slug": "cinema-paradiso",
+    "film_link": null,
+    "poster_url": "/film/cinema-paradiso/image-150/"
+  },
+  "how-to-lose-a-guy-in-10-days": {
+    "film_id": "46715",
+    "film_name": null,
+    "film_slug": "how-to-lose-a-guy-in-10-days",
+    "film_link": null,
+    "poster_url": "/film/how-to-lose-a-guy-in-10-days/image-150/"
+  },
+  "the-first-omen": {
+    "film_id": "370178",
+    "film_name": null,
+    "film_slug": "the-first-omen",
+    "film_link": null,
+    "poster_url": "/film/the-first-omen/image-150/"
+  },
+  "im-not-there": {
+    "film_id": "49578",
+    "film_name": null,
+    "film_slug": "im-not-there",
+    "film_link": null,
+    "poster_url": "/film/im-not-there/image-150/"
+  },
+  "the-buddy-holly-story": {
+    "film_id": "36982",
+    "film_name": null,
+    "film_slug": "the-buddy-holly-story",
+    "film_link": null,
+    "poster_url": "/film/the-buddy-holly-story/image-150/"
+  },
+  "the-harder-they-come": {
+    "film_id": "47998",
+    "film_name": null,
+    "film_slug": "the-harder-they-come",
+    "film_link": null,
+    "poster_url": "/film/the-harder-they-come/image-150/"
+  },
+  "silver-linings-playbook": {
+    "film_id": "69151",
+    "film_name": null,
+    "film_slug": "silver-linings-playbook",
+    "film_link": null,
+    "poster_url": "/film/silver-linings-playbook/image-150/"
+  },
+  "world-war-z": {
+    "film_id": "57292",
+    "film_name": null,
+    "film_slug": "world-war-z",
+    "film_link": null,
+    "poster_url": "/film/world-war-z/image-150/"
+  },
+  "zack-and-miri-make-a-porno": {
+    "film_id": "46306",
+    "film_name": null,
+    "film_slug": "zack-and-miri-make-a-porno",
+    "film_link": null,
+    "poster_url": "/film/zack-and-miri-make-a-porno/image-150/"
+  },
+  "speak-no-evil-2022": {
+    "film_id": "748943",
+    "film_name": null,
+    "film_slug": "speak-no-evil-2022",
+    "film_link": null,
+    "poster_url": "/film/speak-no-evil-2022/image-150/"
+  },
+  "all-of-us-strangers": {
+    "film_id": "895290",
+    "film_name": null,
+    "film_slug": "all-of-us-strangers",
+    "film_link": null,
+    "poster_url": "/film/all-of-us-strangers/image-150/"
+  },
+  "before-sunset": {
+    "film_id": "51970",
+    "film_name": null,
+    "film_slug": "before-sunset",
+    "film_link": null,
+    "poster_url": "/film/before-sunset/image-150/"
+  },
+  "wargames": {
+    "film_id": "51292",
+    "film_name": null,
+    "film_slug": "wargames",
+    "film_link": null,
+    "poster_url": "/film/wargames/image-150/"
+  },
+  "the-deer-hunter": {
+    "film_id": "45017",
+    "film_name": null,
+    "film_slug": "the-deer-hunter",
+    "film_link": null,
+    "poster_url": "/film/the-deer-hunter/image-150/"
+  },
+  "lone-star-1996": {
+    "film_id": "35081",
+    "film_name": null,
+    "film_slug": "lone-star-1996",
+    "film_link": null,
+    "poster_url": "/film/lone-star-1996/image-150/"
+  },
+  "seconds": {
+    "film_id": "38894",
+    "film_name": null,
+    "film_slug": "seconds",
+    "film_link": null,
+    "poster_url": "/film/seconds/image-150/"
+  },
+  "purple-noon": {
+    "film_id": "46301",
+    "film_name": null,
+    "film_slug": "purple-noon",
+    "film_link": null,
+    "poster_url": "/film/purple-noon/image-150/"
+  },
+  "henry-v": {
+    "film_id": "45973",
+    "film_name": null,
+    "film_slug": "henry-v",
+    "film_link": null,
+    "poster_url": "/film/henry-v/image-150/"
+  },
+  "thelma-2017": {
+    "film_id": "336587",
+    "film_name": null,
+    "film_slug": "thelma-2017",
+    "film_link": null,
+    "poster_url": "/film/thelma-2017/image-150/"
+  }
+}
