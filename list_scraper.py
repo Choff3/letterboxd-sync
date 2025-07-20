@@ -6,12 +6,16 @@ import json
 import os
 from tqdm import tqdm
 from dotenv import load_dotenv
+import datetime
 
-CACHE_FILE = 'film_cache.json'
+CACHE_FILE = 'letterboxd_cache.json'
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')  # Optional TMDB API key for better lookups
 
 def load_cache():
-    """Load cached film data"""
+    """
+    Load the film cache from the CACHE_FILE (film_cache.json).
+    Returns a dictionary mapping film slugs or names to their cached data.
+    """
     if os.path.exists(CACHE_FILE):
         with open(CACHE_FILE, 'r') as f:
             try:
@@ -21,13 +25,20 @@ def load_cache():
     return {}
 
 def save_cache(cache):
-    """Save film data to cache"""
+    """
+    Save the given cache dictionary to the CACHE_FILE (film_cache.json).
+    """
     with open(CACHE_FILE, 'w') as f:
         json.dump(cache, f, indent=2)
 
 def get_tmdb_id_from_api(title, year=None):
-    """Get TMDB ID using TMDB API search"""
+    """
+    Query the TMDB API for a movie by title and (optionally) year.
+    Returns the TMDB ID as a string if found, otherwise None.
+    Logs the search and result to the console.
+    """
     if not TMDB_API_KEY:
+        print("[TMDB] No API key provided. Skipping TMDB lookup.")
         return None
     
     try:
@@ -47,16 +58,20 @@ def get_tmdb_id_from_api(title, year=None):
         if year:
             params['year'] = year
         
+        print(f"[TMDB] Searching for '{title}' ({year})...")
         response = requests.get(url, params=params, timeout=10)
         response.raise_for_status()
         
         results = response.json().get('results', [])
         if results:
             # Return the first (most relevant) result
+            print(f"[TMDB] Found TMDB ID {results[0]['id']} for '{title}' ({year})")
             return str(results[0]['id'])
+        else:
+            print(f"[TMDB] No results for '{title}' ({year})")
         
     except Exception as e:
-        print(f"TMDB API error for '{title}': {e}")
+        print(f"[TMDB] API error for '{title}': {e}")
     
     return None
 
@@ -84,71 +99,49 @@ def get_tmdb_id_from_film_page(film_slug):
     return None
 
 def extract_films_from_page(soup):
-    """Extract all film data from a watchlist page"""
+    """
+    Extract all film data from a single Letterboxd watchlist page.
+    For each film, extract the name from the alt property of the image with class='image',
+    and the year from the end of the data-film-slug attribute (if last 4 chars are digits, else year is empty).
+    Returns a list of film data dictionaries (no TMDB lookup).
+    """
     films = []
-    
-    # Find all film posters
     poster_list = soup.find('ul', class_='poster-list')
     if not poster_list:
         return films
-    
     film_containers = poster_list.find_all('li', class_='poster-container')
-    
+    now = datetime.datetime.now().strftime('%b %d %Y %I:%M%p').lower().replace('am', 'am').replace('pm', 'pm')
     for container in film_containers:
         try:
-            # Get the poster div with all the data attributes
             poster_div = container.find('div', class_='film-poster')
             if not poster_div:
                 continue
-            
-            # Extract film data from data attributes
+            img = poster_div.find('img', class_='image')
+            film_name = img['alt'].strip() if img and img.has_attr('alt') else ''
+            film_slug = poster_div.get('data-film-slug', '')
+            year = ''
+            if len(film_slug) >= 4 and film_slug[-4:].isdigit():
+                year = film_slug[-4:]
             film_data = {
                 'film_id': poster_div.get('data-film-id'),
-                'film_name': poster_div.get('data-film-name'),
-                'film_slug': poster_div.get('data-film-slug'),
+                'film_slug': film_slug,
                 'film_link': poster_div.get('data-film-link'),
-                'poster_url': poster_div.get('data-poster-url')
+                'poster_url': poster_div.get('data-poster-url'),
+                'film_name': film_name,
+                'year': year,
+                'date_scraped': now
             }
-            
-            # If film_name is still null, try to get it from the frame title
-            if not film_data['film_name']:
-                frame_title = poster_div.find('span', class_='frame-title')
-                if frame_title:
-                    title_text = frame_title.get_text()
-                    # Remove year from title if present
-                    title_without_year = re.sub(r'\s*\(\d{4}\)\s*$', '', title_text).strip()
-                    film_data['film_name'] = title_without_year
-            
-            # Extract year from the frame title
-            frame_title = poster_div.find('span', class_='frame-title')
-            if frame_title:
-                title_text = frame_title.get_text()
-                year_match = re.search(r'\((\d{4})\)', title_text)
-                if year_match:
-                    film_data['year'] = year_match.group(1)
-            
-            # Try to get TMDB ID from API first
-            if film_data['film_name'] and film_data.get('year'):
-                tmdb_id = get_tmdb_id_from_api(film_data['film_name'], film_data['year'])
-                if tmdb_id:
-                    film_data['tmdb_id'] = tmdb_id
-            
-            # If no TMDB ID from API, try film page (but only if we have a slug)
-            if not film_data.get('tmdb_id') and film_data.get('film_slug'):
-                tmdb_id = get_tmdb_id_from_film_page(film_data['film_slug'])
-                if tmdb_id:
-                    film_data['tmdb_id'] = tmdb_id
-            
             films.append(film_data)
-            
         except Exception as e:
             print(f"Error extracting film data: {e}")
             continue
-    
     return films
 
 def get_total_film_count(soup):
-    """Extract total film count from the page header"""
+    """
+    Extract the total number of films in the watchlist from the page header.
+    Returns the count as an integer, or None if not found.
+    """
     try:
         count_element = soup.find('span', class_='js-watchlist-count')
         if count_element:
@@ -163,95 +156,24 @@ def get_total_film_count(soup):
     return None
 
 def scrape_list(list_url):
-    """Scrape watchlist with improved efficiency"""
-    print(f"Scraping {list_url}")
-    
-    load_dotenv()  # Ensure .env is loaded before reading TMDB_API_KEY
-    global TMDB_API_KEY
-    TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')
-    
-    cache = load_cache()
+    """
+    Use requests to load the Letterboxd watchlist page, print the entire HTML, extract all films, and save to letterboxd_cache.json.
+    """
+    print(f"Scraping {list_url} with requests...")
     all_films = []
-    updated = False
-    
     try:
-        # Get the first page to determine total count and films per page
+        import requests
         response = requests.get(list_url, timeout=30)
-        response.raise_for_status()
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # Get total film count
-        total_films = get_total_film_count(soup)
-        if total_films:
-            print(f"Total films in watchlist: {total_films}")
-        
-        # Extract films from first page
+        print("\n--- BEGIN RAW HTML ---\n")
+        print(response.text)
+        print("\n--- END RAW HTML ---\n")
+        soup = BeautifulSoup(response.text, 'html.parser')
         films = extract_films_from_page(soup)
         all_films.extend(films)
-        
-        # Calculate total pages (assuming 100 films per page based on HTML comment)
-        films_per_page = 100
-        total_pages = (total_films + films_per_page - 1) // films_per_page if total_films else 1
-        
-        print(f"Films per page: {films_per_page}, Total pages: {total_pages}")
-        
-        # If less than 5 pages, no need for rate limiting
-        use_rate_limiting = total_pages >= 5
-        
-        # Process remaining pages
-        for page in range(2, total_pages + 1):
-            page_url = f"{list_url.rstrip('/')}/page/{page}/"
-            print(f"Scraping page {page}/{total_pages}: {page_url}")
-            
-            if use_rate_limiting:
-                time.sleep(2)  # Rate limiting for large watchlists
-            
-            try:
-                response = requests.get(page_url, timeout=30)
-                response.raise_for_status()
-                soup = BeautifulSoup(response.content, 'html.parser')
-                
-                films = extract_films_from_page(soup)
-                all_films.extend(films)
-                
-            except requests.exceptions.HTTPError as e:
-                if e.response.status_code == 429:
-                    print(f"Rate limited. Waiting 60 seconds...")
-                    time.sleep(60)
-                    continue
-                else:
-                    print(f"Error fetching page {page}: {e}")
-                    break
-            except Exception as e:
-                print(f"Error processing page {page}: {e}")
-                break
-        
-        # Update cache with new film data
-        for film in all_films:
-            film_key = film.get('film_slug') or film.get('film_name')
-            if film_key and film_key not in cache:
-                cache[film_key] = film
-                updated = True
-        
-        if updated:
-            save_cache(cache)
-        
-        # Extract TMDB IDs for return
-        tmdb_ids = []
-        for film in all_films:
-            if film.get('tmdb_id'):
-                tmdb_ids.append(film['tmdb_id'])
-        
-        print(f"Successfully scraped {len(all_films)} films, found {len(tmdb_ids)} TMDB IDs")
-        return tmdb_ids
-        
-    except requests.RequestException as e:
-        print(f"Error fetching data from Letterboxd: {e}")
-        if updated:
-            save_cache(cache)
-        return None
+        with open(CACHE_FILE, 'w') as f:
+            json.dump(all_films, f, indent=2)
+        print(f"Saved {len(all_films)} films to {CACHE_FILE}")
+        return all_films
     except Exception as e:
-        print(f"Unexpected error during scraping: {e}")
-        if updated:
-            save_cache(cache)
+        print(f"Error fetching data from Letterboxd: {e}")
         return None
