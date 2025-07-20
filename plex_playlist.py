@@ -14,7 +14,7 @@ load_dotenv()
 def format_date(date=None):
     if not date:
         date = datetime.now()
-    return date.strftime('%b %d %Y').lower()
+    return date.strftime('%b %d %Y %I:%M%p').lower()
 
 def main():
     plex_host = os.getenv('PLEX_HOST')
@@ -105,12 +105,50 @@ def main():
             playlist = server.createPlaylist(PLAYLIST_NAME, items=items_to_add)
         else:
             try:
-                # Simple approach: always recreate playlist for now
-                # This ensures it always matches the current TMDB cache exactly
-                playlist.delete()
-                playlist = server.createPlaylist(PLAYLIST_NAME, items=items_to_add)
-                print(f"[DEBUG] Recreated playlist '{PLAYLIST_NAME}' with {len(items_to_add)} shuffled items.")
-                print(f"[DEBUG] Note: Using recreation approach to ensure exact sync with TMDB cache.")
+                # Select a random movie from TMDB cache as the lead movie
+                if items_to_add:
+                    lead_movie = random.choice(items_to_add)
+                    other_movies = [movie for movie in items_to_add if movie != lead_movie]
+                    random.shuffle(other_movies)
+                    
+                    print(f"[DEBUG] Selected lead movie: {lead_movie.title if hasattr(lead_movie, 'title') else 'Unknown'}")
+                    print(f"[DEBUG] Will add {len(other_movies)} other movies in shuffled order.")
+                    
+                    # Get current playlist items
+                    playlist.reload()
+                    current_items = list(playlist.items())
+                    print(f"[DEBUG] Current playlist has {len(current_items)} items.")
+                    
+                    # Remove all movies except the lead movie
+                    items_to_remove = []
+                    for item in current_items:
+                        # Check if this item is the lead movie
+                        if hasattr(item, 'guid') and hasattr(lead_movie, 'guid'):
+                            if item.guid == lead_movie.guid:
+                                print(f"[DEBUG] Keeping lead movie in playlist: {item.title if hasattr(item, 'title') else 'Unknown'}")
+                            else:
+                                items_to_remove.append(item)
+                        else:
+                            # If we can't compare by guid, remove all items
+                            items_to_remove.append(item)
+                    
+                    # Remove all non-lead movies
+                    if items_to_remove:
+                        playlist.removeItems(items_to_remove)
+                        print(f"[DEBUG] Removed {len(items_to_remove)} non-lead movies from playlist.")
+                    
+                    # Add all other movies in shuffled order
+                    if other_movies:
+                        playlist.addItems(other_movies)
+                        print(f"[DEBUG] Added {len(other_movies)} shuffled movies to playlist.")
+                    
+                    # Reload to get final count
+                    playlist.reload()
+                    final_items = list(playlist.items())
+                    print(f"[DEBUG] Final playlist has {len(final_items)} items.")
+                    
+                else:
+                    print(f"[DEBUG] No movies found in TMDB cache to process.")
                     
             except Exception as e:
                 print(f"[ERROR] Updating playlist: {e}")
