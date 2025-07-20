@@ -105,13 +105,32 @@ def main():
             playlist = server.createPlaylist(PLAYLIST_NAME, items=items_to_add)
         else:
             try:
-                playlist.reload()
-                playlist.items = items_to_add
-                print(f"[DEBUG] Updated playlist '{PLAYLIST_NAME}' with {len(items_to_add)} shuffled items.")
+                # Simple approach: always recreate playlist for now
+                # This ensures it always matches the current TMDB cache exactly
+                playlist.delete()
+                playlist = server.createPlaylist(PLAYLIST_NAME, items=items_to_add)
+                print(f"[DEBUG] Recreated playlist '{PLAYLIST_NAME}' with {len(items_to_add)} shuffled items.")
+                print(f"[DEBUG] Note: Using recreation approach to ensure exact sync with TMDB cache.")
+                    
             except Exception as e:
                 print(f"[ERROR] Updating playlist: {e}")
+                # Fallback: recreate playlist
+                try:
+                    playlist.delete()
+                    playlist = server.createPlaylist(PLAYLIST_NAME, items=items_to_add)
+                    print(f"[DEBUG] Fallback: recreated playlist '{PLAYLIST_NAME}' with {len(items_to_add)} items.")
+                except Exception as e2:
+                    print(f"[ERROR] Fallback also failed: {e2}")
     else:
-        print(f"[DEBUG] No items to add to playlist. Playlist not created or updated.")
+        # If no items to add, delete the playlist if it exists
+        if playlist:
+            try:
+                playlist.delete()
+                print(f"[DEBUG] Deleted playlist '{PLAYLIST_NAME}' - no movies found in TMDB cache.")
+            except Exception as e:
+                print(f"[ERROR] Deleting playlist: {e}")
+        else:
+            print(f"[DEBUG] No items to add to playlist. Playlist not created.")
 
     # Write results to plex_cache.json
     with open(PLEX_CACHE, 'w') as f:
