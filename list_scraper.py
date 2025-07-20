@@ -8,7 +8,7 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 import datetime
 
-CACHE_FILE = 'letterboxd_cache.json'
+CACHE_FILE = 'cache/letterboxd_cache.json'
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')  # Optional TMDB API key for better lookups
 
 def load_cache():

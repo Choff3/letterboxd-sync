@@ -15,7 +15,7 @@ def main():
     logger = setup_logging(logging.DEBUG if debug_mode else logging.INFO)
     load_dotenv()
 
-    # Scrape Letterboxd and write to letterboxd_cache.json
+    # Scrape Letterboxd and write to cache/letterboxd_cache.json
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
     if not letterboxd_username:
         logger.error("LETTERBOXD_USERNAME environment variable is required")
