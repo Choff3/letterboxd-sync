@@ -20,14 +20,15 @@ def overseerr_monitor_add_from_plex_cache():
     
     # Get Overseerr configuration from environment
     overseerr_host = os.getenv('OVERSEERR_HOST')
-    overseerr_api_key = os.getenv('OVERSEERR_API_KEY')
+    overseerr_api_key = os.getenv('OVERSEERR_TOKEN')  # Using OVERSEERR_TOKEN from your .env
     
     if not overseerr_host or not overseerr_api_key:
-        print("Error: OVERSEERR_HOST and OVERSEERR_API_KEY must be set in environment variables")
+        print("Error: OVERSEERR_HOST and OVERSEERR_TOKEN must be set in environment variables")
+        print("Please add OVERSEERR_HOST=http://your_overseerr_ip:port to your .env file")
         return
     
     print(f"[DEBUG] OVERSEERR_HOST: {overseerr_host}")
-    print(f"[DEBUG] OVERSEERR_API_KEY: {overseerr_api_key[:6]}... (truncated)")
+    print(f"[DEBUG] OVERSEERR_TOKEN: {overseerr_api_key[:6]}... (truncated)")
     
     # Load plex cache
     if not os.path.exists(PLEX_CACHE):
