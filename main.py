@@ -37,21 +37,32 @@ def main():
         films = scrape_list(list_url)
         if not films:
             logger.error("No films found in watchlist or error occurred during scraping")
+            logger.error("Other functions cannot proceed without successful scraping")
             sys.exit(1)
         
         logger.info(f"Found {len(films)} films in watchlist")
         logger.info("Letterboxd scraping completed successfully!")
+        logger.info("Proceeding to next step...")
     else:
         logger.info("Skipping Letterboxd scraper (RUN_SCRAPER not enabled)")
+        logger.warning("Other functions may fail without fresh Letterboxd data")
     
     # ============================================================================
     # SECTION 2: TMDB LOOKUP
     # ============================================================================
     # Uncomment the next line to run TMDB lookup to get the IDs for each film
-    # RUN_TMDB_LOOKUP = True
+    RUN_TMDB_LOOKUP = True
     
     if 'RUN_TMDB_LOOKUP' in locals():
         logger.info("--- Step 2: TMDB Lookup ---")
+        
+        # Check if Letterboxd cache exists
+        letterboxd_cache = 'cache/letterboxd_cache.json'
+        if not os.path.exists(letterboxd_cache):
+            logger.error(f"Letterboxd cache file '{letterboxd_cache}' not found")
+            logger.error("Please run the scraper first (enable RUN_SCRAPER)")
+            sys.exit(1)
+        
         tmdb_results = tmdb_lookup_all()
         if not tmdb_results:
             logger.error("No TMDB results found")
@@ -71,6 +82,14 @@ def main():
     
     if 'RUN_PLEX_PLAYLIST' in locals():
         logger.info("--- Step 3: Plex Playlist Creation ---")
+        
+        # Check if TMDB cache exists
+        tmdb_cache = 'cache/tmdb_cache.json'
+        if not os.path.exists(tmdb_cache):
+            logger.error(f"TMDB cache file '{tmdb_cache}' not found")
+            logger.error("Please run TMDB lookup first (enable RUN_TMDB_LOOKUP)")
+            sys.exit(1)
+        
         plex_host = os.getenv('PLEX_HOST')
         plex_token = os.getenv('PLEX_TOKEN')
         
@@ -91,12 +110,20 @@ def main():
     # SECTION 4: OVERSEERR REQUESTS
     # ============================================================================
     # Uncomment the next line to request missing movies in Overseerr
-    # RUN_OVERSEERR_REQUESTS = True
+    RUN_OVERSEERR_REQUESTS = True
     
     if 'RUN_OVERSEERR_REQUESTS' in locals():
         logger.info("--- Step 4: Overseerr Requests ---")
+        
+        # Check if Plex cache exists
+        plex_cache = 'cache/plex_cache.json'
+        if not os.path.exists(plex_cache):
+            logger.error(f"Plex cache file '{plex_cache}' not found")
+            logger.error("Please run Plex playlist creation first (enable RUN_PLEX_PLAYLIST)")
+            sys.exit(1)
+        
         overseerr_host = os.getenv('OVERSEERR_HOST')
-        overseerr_api_key = os.getenv('OVERSEERR_API_KEY')
+        overseerr_api_key = os.getenv('OVERSEERR_API_KEY')  # Using OVERSEERR_API_KEY from your .env
         
         if not overseerr_host or not overseerr_api_key:
             logger.error("OVERSEERR_HOST and OVERSEERR_API_KEY environment variables are required")

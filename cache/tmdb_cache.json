@@ -1,5 +1,10 @@
 [
   {
+    "film_name": "The Girl with the Dragon Tattoo",
+    "year": "2011",
+    "tmdb_id": "65754"
+  },
+  {
     "film_name": "Memories of Murder",
     "year": "",
     "tmdb_id": "11423"
@@ -133,5 +138,925 @@
     "film_name": "I Saw the TV Glow",
     "year": "",
     "tmdb_id": "858017"
+  },
+  {
+    "film_name": "Lincoln",
+    "year": "",
+    "tmdb_id": "340036"
+  },
+  {
+    "film_name": "The Silence of the Lambs",
+    "year": "",
+    "tmdb_id": "274"
+  },
+  {
+    "film_name": "The Wind That Shakes the Barley",
+    "year": "",
+    "tmdb_id": "1116"
+  },
+  {
+    "film_name": "Manchester by the Sea",
+    "year": "",
+    "tmdb_id": "334541"
+  },
+  {
+    "film_name": "Toy Story 2",
+    "year": "",
+    "tmdb_id": "863"
+  },
+  {
+    "film_name": "The Shape of Water",
+    "year": "",
+    "tmdb_id": "399055"
+  },
+  {
+    "film_name": "Lady Vengeance",
+    "year": "",
+    "tmdb_id": "4550"
+  },
+  {
+    "film_name": "Werckmeister Harmonies",
+    "year": "",
+    "tmdb_id": "23160"
+  },
+  {
+    "film_name": "13 Assassins",
+    "year": "",
+    "tmdb_id": "58857"
+  },
+  {
+    "film_name": "Hard Eight",
+    "year": "",
+    "tmdb_id": "8052"
+  },
+  {
+    "film_name": "The Passion of Joan of Arc",
+    "year": "",
+    "tmdb_id": "780"
+  },
+  {
+    "film_name": "Wallace & Gromit: Vengeance Most Fowl",
+    "year": "",
+    "tmdb_id": "929204"
+  },
+  {
+    "film_name": "The Tragedy of Macbeth",
+    "year": "",
+    "tmdb_id": "591538"
+  },
+  {
+    "film_name": "I'm Still Here",
+    "year": "2024",
+    "tmdb_id": "1000837"
+  },
+  {
+    "film_name": "The Leopard",
+    "year": "",
+    "tmdb_id": "693321"
+  },
+  {
+    "film_name": "The Last Duel",
+    "year": "2021",
+    "tmdb_id": "617653"
+  },
+  {
+    "film_name": "Rashomon",
+    "year": "",
+    "tmdb_id": "548"
+  },
+  {
+    "film_name": "Yojimbo",
+    "year": "",
+    "tmdb_id": "42601"
+  },
+  {
+    "film_name": "The Housemaid",
+    "year": "",
+    "tmdb_id": "1368166"
+  },
+  {
+    "film_name": "Mary Queen of Scots",
+    "year": "2018",
+    "tmdb_id": "457136"
+  },
+  {
+    "film_name": "Sense and Sensibility",
+    "year": "",
+    "tmdb_id": "4584"
+  },
+  {
+    "film_name": "Far from the Madding Crowd",
+    "year": "2015",
+    "tmdb_id": "250734"
+  },
+  {
+    "film_name": "Portrait of a Lady on Fire",
+    "year": "",
+    "tmdb_id": "531428"
+  },
+  {
+    "film_name": "Shoplifters",
+    "year": "",
+    "tmdb_id": "1391581"
+  },
+  {
+    "film_name": "Sunshine",
+    "year": "2007",
+    "tmdb_id": "1272"
+  },
+  {
+    "film_name": "Solaris",
+    "year": "",
+    "tmdb_id": "2103"
+  },
+  {
+    "film_name": "Chicken Run",
+    "year": "",
+    "tmdb_id": "7443"
+  },
+  {
+    "film_name": "A Grand Day Out",
+    "year": "",
+    "tmdb_id": "530"
+  },
+  {
+    "film_name": "The Bourne Identity",
+    "year": "2002",
+    "tmdb_id": "2501"
+  },
+  {
+    "film_name": "Spirit: Stallion of the Cimarron",
+    "year": "",
+    "tmdb_id": "9023"
+  },
+  {
+    "film_name": "A Serious Man",
+    "year": "",
+    "tmdb_id": "12573"
+  },
+  {
+    "film_name": "And the King Said, What a Fantastic Machine",
+    "year": "",
+    "tmdb_id": "1058652"
+  },
+  {
+    "film_name": "Ed Wood",
+    "year": "",
+    "tmdb_id": "522"
+  },
+  {
+    "film_name": "The Game",
+    "year": "",
+    "tmdb_id": "2649"
+  },
+  {
+    "film_name": "Little Shop of Horrors",
+    "year": "",
+    "tmdb_id": "10776"
+  },
+  {
+    "film_name": "The Prince of Egypt",
+    "year": "",
+    "tmdb_id": "9837"
+  },
+  {
+    "film_name": "Blazing Saddles",
+    "year": "",
+    "tmdb_id": "11072"
+  },
+  {
+    "film_name": "Time Masters",
+    "year": "",
+    "tmdb_id": "22501"
+  },
+  {
+    "film_name": "Cinema Paradiso",
+    "year": "",
+    "tmdb_id": "11216"
+  },
+  {
+    "film_name": "How to Lose a Guy in 10 Days",
+    "year": "",
+    "tmdb_id": "9919"
+  },
+  {
+    "film_name": "The First Omen",
+    "year": "",
+    "tmdb_id": "437342"
+  },
+  {
+    "film_name": "I'm Not There",
+    "year": "",
+    "tmdb_id": "3902"
+  },
+  {
+    "film_name": "The Buddy Holly Story",
+    "year": "",
+    "tmdb_id": "24153"
+  },
+  {
+    "film_name": "The Harder They Come",
+    "year": "",
+    "tmdb_id": "7514"
+  },
+  {
+    "film_name": "Silver Linings Playbook",
+    "year": "",
+    "tmdb_id": "82693"
+  },
+  {
+    "film_name": "World War Z",
+    "year": "",
+    "tmdb_id": "72190"
+  },
+  {
+    "film_name": "Zack and Miri Make a Porno",
+    "year": "",
+    "tmdb_id": "10358"
+  },
+  {
+    "film_name": "Speak No Evil",
+    "year": "2022",
+    "tmdb_id": "833339"
+  },
+  {
+    "film_name": "All of Us Strangers",
+    "year": "",
+    "tmdb_id": "994108"
+  },
+  {
+    "film_name": "Before Sunset",
+    "year": "",
+    "tmdb_id": "80"
+  },
+  {
+    "film_name": "WarGames",
+    "year": "",
+    "tmdb_id": "860"
+  },
+  {
+    "film_name": "The Deer Hunter",
+    "year": "",
+    "tmdb_id": "11778"
+  },
+  {
+    "film_name": "Lone Star",
+    "year": "1996",
+    "tmdb_id": "26748"
+  },
+  {
+    "film_name": "Seconds",
+    "year": "",
+    "tmdb_id": "969178"
+  },
+  {
+    "film_name": "Purple Noon",
+    "year": "",
+    "tmdb_id": "10363"
+  },
+  {
+    "film_name": "Henry V",
+    "year": "",
+    "tmdb_id": "10705"
+  },
+  {
+    "film_name": "Thelma",
+    "year": "2017",
+    "tmdb_id": "401898"
+  },
+  {
+    "film_name": "Thelma",
+    "year": "2024",
+    "tmdb_id": "1051891"
+  },
+  {
+    "film_name": "Ghostlight",
+    "year": "2024",
+    "tmdb_id": "1214469"
+  },
+  {
+    "film_name": "Revolutionary Girl Utena",
+    "year": "",
+    "tmdb_id": "19738"
+  },
+  {
+    "film_name": "MaXXXine",
+    "year": "",
+    "tmdb_id": "1023922"
+  },
+  {
+    "film_name": "Logan",
+    "year": "2017",
+    "tmdb_id": "263115"
+  },
+  {
+    "film_name": "Total Recall",
+    "year": "",
+    "tmdb_id": "861"
+  },
+  {
+    "film_name": "Eyes Wide Shut",
+    "year": "",
+    "tmdb_id": "345"
+  },
+  {
+    "film_name": "The Handmaiden",
+    "year": "",
+    "tmdb_id": "290098"
+  },
+  {
+    "film_name": "Millennium Actress",
+    "year": "",
+    "tmdb_id": "33320"
+  },
+  {
+    "film_name": "In the Loop",
+    "year": "",
+    "tmdb_id": "19833"
+  },
+  {
+    "film_name": "The Wicker Man",
+    "year": "",
+    "tmdb_id": "16307"
+  },
+  {
+    "film_name": "Primal Fear",
+    "year": "",
+    "tmdb_id": "1592"
+  },
+  {
+    "film_name": "In Cold Blood",
+    "year": "",
+    "tmdb_id": "18900"
+  },
+  {
+    "film_name": "The Hunt",
+    "year": "2012",
+    "tmdb_id": "152578"
+  },
+  {
+    "film_name": "A Separation",
+    "year": "",
+    "tmdb_id": "703731"
+  },
+  {
+    "film_name": "Incendies",
+    "year": "",
+    "tmdb_id": "46738"
+  },
+  {
+    "film_name": "Nobody Knows",
+    "year": "",
+    "tmdb_id": "2517"
+  },
+  {
+    "film_name": "Eternity and a Day",
+    "year": "",
+    "tmdb_id": "24858"
+  },
+  {
+    "film_name": "Perfect Blue",
+    "year": "",
+    "tmdb_id": "10494"
+  },
+  {
+    "film_name": "Secrets & Lies",
+    "year": "",
+    "tmdb_id": "1027704"
+  },
+  {
+    "film_name": "Life, and Nothing More\u2026",
+    "year": "",
+    "tmdb_id": "1476109"
+  },
+  {
+    "film_name": "A Brighter Summer Day",
+    "year": "",
+    "tmdb_id": "15804"
+  },
+  {
+    "film_name": "Grave of the Fireflies",
+    "year": "",
+    "tmdb_id": "76826"
+  },
+  {
+    "film_name": "Where Is the Friend's House?",
+    "year": "",
+    "tmdb_id": "49964"
+  },
+  {
+    "film_name": "The Sacrifice",
+    "year": "",
+    "tmdb_id": "413254"
+  },
+  {
+    "film_name": "Paris, Texas",
+    "year": "",
+    "tmdb_id": "655"
+  },
+  {
+    "film_name": "Nostalgia",
+    "year": "1983",
+    "tmdb_id": "1394"
+  },
+  {
+    "film_name": "Keith Robinson: Different Strokes",
+    "year": "",
+    "tmdb_id": "1302322"
+  },
+  {
+    "film_name": "Breaking Away",
+    "year": "",
+    "tmdb_id": "20283"
+  },
+  {
+    "film_name": "Bully",
+    "year": "",
+    "tmdb_id": "659475"
+  },
+  {
+    "film_name": "Dog Day Afternoon",
+    "year": "",
+    "tmdb_id": "968"
+  },
+  {
+    "film_name": "The Last of the Mohicans",
+    "year": "1992",
+    "tmdb_id": "9361"
+  },
+  {
+    "film_name": "D\u00ecdi (\u5f1f\u5f1f)",
+    "year": "2024",
+    "tmdb_id": "1158915"
+  },
+  {
+    "film_name": "God's Own Country",
+    "year": "2017",
+    "tmdb_id": "428493"
+  },
+  {
+    "film_name": "Tokyo Godfathers",
+    "year": "",
+    "tmdb_id": "13398"
+  },
+  {
+    "film_name": "Muriel's Wedding",
+    "year": "",
+    "tmdb_id": "236"
+  },
+  {
+    "film_name": "The Quiet Man",
+    "year": "",
+    "tmdb_id": "3109"
+  },
+  {
+    "film_name": "The Hours",
+    "year": "",
+    "tmdb_id": "590"
+  },
+  {
+    "film_name": "The Man in the Hat",
+    "year": "2020",
+    "tmdb_id": "737195"
+  },
+  {
+    "film_name": "Zero Dark Thirty",
+    "year": "",
+    "tmdb_id": "97630"
+  },
+  {
+    "film_name": "Gomorrah",
+    "year": "",
+    "tmdb_id": "1186121"
+  },
+  {
+    "film_name": "Perfect Days",
+    "year": "2023",
+    "tmdb_id": "976893"
+  },
+  {
+    "film_name": "Monster",
+    "year": "",
+    "tmdb_id": "489932"
+  },
+  {
+    "film_name": "In the Cut",
+    "year": "",
+    "tmdb_id": "10944"
+  },
+  {
+    "film_name": "Prisoners",
+    "year": "",
+    "tmdb_id": "146233"
+  },
+  {
+    "film_name": "Dunkirk",
+    "year": "2017",
+    "tmdb_id": "374720"
+  },
+  {
+    "film_name": "The Lost Daughter",
+    "year": "2021",
+    "tmdb_id": "554230"
+  },
+  {
+    "film_name": "I Saw the Devil",
+    "year": "",
+    "tmdb_id": "49797"
+  },
+  {
+    "film_name": "Rear Window",
+    "year": "",
+    "tmdb_id": "567"
+  },
+  {
+    "film_name": "Phantom Thread",
+    "year": "",
+    "tmdb_id": "400617"
+  },
+  {
+    "film_name": "Slums of Beverly Hills",
+    "year": "",
+    "tmdb_id": "14662"
+  },
+  {
+    "film_name": "The Last Unicorn",
+    "year": "",
+    "tmdb_id": "10150"
+  },
+  {
+    "film_name": "Rachel Getting Married",
+    "year": "",
+    "tmdb_id": "14976"
+  },
+  {
+    "film_name": "Misery",
+    "year": "",
+    "tmdb_id": "1700"
+  },
+  {
+    "film_name": "Are You There God? It's Me, Margaret.",
+    "year": "",
+    "tmdb_id": "555285"
+  },
+  {
+    "film_name": "BLUE EYE SAMURAI",
+    "year": "",
+    "tmdb_id": null
+  },
+  {
+    "film_name": "National Lampoon's Christmas Vacation",
+    "year": "",
+    "tmdb_id": "5825"
+  },
+  {
+    "film_name": "The City of Lost Children",
+    "year": "",
+    "tmdb_id": "902"
+  },
+  {
+    "film_name": "The Discreet Charm of the Bourgeoisie",
+    "year": "",
+    "tmdb_id": "4593"
+  },
+  {
+    "film_name": "The Fall",
+    "year": "",
+    "tmdb_id": "14784"
+  },
+  {
+    "film_name": "The Magician",
+    "year": "1958",
+    "tmdb_id": "29453"
+  },
+  {
+    "film_name": "To Live and Die in L.A.",
+    "year": "",
+    "tmdb_id": "9846"
+  },
+  {
+    "film_name": "Audition",
+    "year": "",
+    "tmdb_id": "823943"
+  },
+  {
+    "film_name": "The Daytrippers",
+    "year": "",
+    "tmdb_id": "49806"
+  },
+  {
+    "film_name": "Spectre",
+    "year": "2015",
+    "tmdb_id": "206647"
+  },
+  {
+    "film_name": "Skyfall",
+    "year": "",
+    "tmdb_id": "37724"
+  },
+  {
+    "film_name": "Dr. No",
+    "year": "",
+    "tmdb_id": "646"
+  },
+  {
+    "film_name": "From Russia with Love",
+    "year": "",
+    "tmdb_id": "657"
+  },
+  {
+    "film_name": "Goldfinger",
+    "year": "",
+    "tmdb_id": "658"
+  },
+  {
+    "film_name": "Departures",
+    "year": "",
+    "tmdb_id": "1155752"
+  },
+  {
+    "film_name": "Lawless Heart",
+    "year": "",
+    "tmdb_id": "77283"
+  },
+  {
+    "film_name": "The Battle of Chile: Part I",
+    "year": "",
+    "tmdb_id": "132148"
+  },
+  {
+    "film_name": "The Nightmare",
+    "year": "2015",
+    "tmdb_id": "312827"
+  },
+  {
+    "film_name": "Rat Film",
+    "year": "",
+    "tmdb_id": "409109"
+  },
+  {
+    "film_name": "Prince of Broadway",
+    "year": "",
+    "tmdb_id": "87081"
+  },
+  {
+    "film_name": "The Treasure of the Sierra Madre",
+    "year": "",
+    "tmdb_id": "3090"
+  },
+  {
+    "film_name": "Memories of Underdevelopment",
+    "year": "",
+    "tmdb_id": "47576"
+  },
+  {
+    "film_name": "Pinocchio",
+    "year": "",
+    "tmdb_id": "33821"
+  },
+  {
+    "film_name": "Hoop Dreams",
+    "year": "",
+    "tmdb_id": "14275"
+  },
+  {
+    "film_name": "Die Hard",
+    "year": "",
+    "tmdb_id": "562"
+  },
+  {
+    "film_name": "Some Like It Hot",
+    "year": "",
+    "tmdb_id": "239"
+  },
+  {
+    "film_name": "Man Push Cart",
+    "year": "",
+    "tmdb_id": "5717"
+  },
+  {
+    "film_name": "The Mother and the Whore",
+    "year": "",
+    "tmdb_id": "48693"
+  },
+  {
+    "film_name": "Kung Fu Hustle",
+    "year": "",
+    "tmdb_id": "9470"
+  },
+  {
+    "film_name": "The Hunchback of Notre Dame",
+    "year": "1996",
+    "tmdb_id": "10545"
+  },
+  {
+    "film_name": "The Insider",
+    "year": "",
+    "tmdb_id": "9008"
+  },
+  {
+    "film_name": "Suspiria",
+    "year": "2018",
+    "tmdb_id": "361292"
+  },
+  {
+    "film_name": "Wanda",
+    "year": "",
+    "tmdb_id": "80560"
+  },
+  {
+    "film_name": "Eraserhead",
+    "year": "",
+    "tmdb_id": "985"
+  },
+  {
+    "film_name": "Four Weddings and a Funeral",
+    "year": "",
+    "tmdb_id": "712"
+  },
+  {
+    "film_name": "Say Anything...",
+    "year": "",
+    "tmdb_id": "2028"
+  },
+  {
+    "film_name": "The Big Sick",
+    "year": "",
+    "tmdb_id": "416477"
+  },
+  {
+    "film_name": "Promising Young Woman",
+    "year": "",
+    "tmdb_id": "582014"
+  },
+  {
+    "film_name": "Which Way Home",
+    "year": "",
+    "tmdb_id": "55204"
+  },
+  {
+    "film_name": "Boyhood",
+    "year": "",
+    "tmdb_id": "85350"
+  },
+  {
+    "film_name": "Paterson",
+    "year": "",
+    "tmdb_id": "370755"
+  },
+  {
+    "film_name": "Chuck & Buck",
+    "year": "",
+    "tmdb_id": "44490"
+  },
+  {
+    "film_name": "Exotica",
+    "year": "",
+    "tmdb_id": "20156"
+  },
+  {
+    "film_name": "Only Angels Have Wings",
+    "year": "",
+    "tmdb_id": "43832"
+  },
+  {
+    "film_name": "Decision to Leave",
+    "year": "",
+    "tmdb_id": "705996"
+  },
+  {
+    "film_name": "Videodrome",
+    "year": "",
+    "tmdb_id": "837"
+  },
+  {
+    "film_name": "The Searchers",
+    "year": "",
+    "tmdb_id": "3114"
+  },
+  {
+    "film_name": "Tokyo Story",
+    "year": "",
+    "tmdb_id": "18148"
+  },
+  {
+    "film_name": "National Theatre Live: Prima Facie",
+    "year": "",
+    "tmdb_id": "963568"
+  },
+  {
+    "film_name": "Demons",
+    "year": "1971",
+    "tmdb_id": "104548"
+  },
+  {
+    "film_name": "The Cremator",
+    "year": "",
+    "tmdb_id": "775517"
+  },
+  {
+    "film_name": "Psycho",
+    "year": "",
+    "tmdb_id": "539"
+  },
+  {
+    "film_name": "Mulholland Drive",
+    "year": "",
+    "tmdb_id": "1018"
+  },
+  {
+    "film_name": "10 Things I Hate About You",
+    "year": "",
+    "tmdb_id": "4951"
+  },
+  {
+    "film_name": "Scott Pilgrim vs. the World",
+    "year": "",
+    "tmdb_id": "22538"
+  },
+  {
+    "film_name": "George Carlin's American Dream",
+    "year": "",
+    "tmdb_id": null
+  },
+  {
+    "film_name": "Anchorman 2: The Legend Continues",
+    "year": "",
+    "tmdb_id": "109443"
+  },
+  {
+    "film_name": "The Fisher King",
+    "year": "",
+    "tmdb_id": "177"
+  },
+  {
+    "film_name": "I Am Big Bird: The Caroll Spinney Story",
+    "year": "",
+    "tmdb_id": "266619"
+  },
+  {
+    "film_name": "A Room with a View",
+    "year": "",
+    "tmdb_id": "11257"
+  },
+  {
+    "film_name": "The Decameron",
+    "year": "",
+    "tmdb_id": "526537"
+  },
+  {
+    "film_name": "The Limey",
+    "year": "",
+    "tmdb_id": "10388"
+  },
+  {
+    "film_name": "Y Tu Mam\u00e1 Tambi\u00e9n",
+    "year": "",
+    "tmdb_id": "1391"
+  },
+  {
+    "film_name": "Fire of Love",
+    "year": "2022",
+    "tmdb_id": "913823"
+  },
+  {
+    "film_name": "Bonnie and Clyde",
+    "year": "",
+    "tmdb_id": "142461"
+  },
+  {
+    "film_name": "Black Swan",
+    "year": "",
+    "tmdb_id": "44214"
+  },
+  {
+    "film_name": "Minions: The Rise of Gru",
+    "year": "",
+    "tmdb_id": "438148"
+  },
+  {
+    "film_name": "Ran",
+    "year": "",
+    "tmdb_id": "635736"
+  },
+  {
+    "film_name": "Borat Subsequent Moviefilm",
+    "year": "",
+    "tmdb_id": "740985"
+  },
+  {
+    "film_name": "Come and See",
+    "year": "",
+    "tmdb_id": "25237"
+  },
+  {
+    "film_name": "A Bug's Life",
+    "year": "",
+    "tmdb_id": "9487"
+  },
+  {
+    "film_name": "Being John Malkovich",
+    "year": "",
+    "tmdb_id": "492"
   }
 ]

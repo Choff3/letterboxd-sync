@@ -53,26 +53,16 @@ def radarr_monitor_add_from_plex_cache():
     
     # Get root directory from Radarr
     try:
-        root_response = requests.get(
-            f"{radarr_host}/api/v3/rootfolder", 
-            params={"apikey": radarr_api_key}, 
-            timeout=30
-        )
-        root_response.raise_for_status()
-        root_folders = root_response.json()
-        
-        if not root_folders:
-            print("No root folders found in Radarr")
+        root_dirs_resp = requests.get(f"{radarr_host}/api/v3/rootfolder", headers={"X-Api-Key": radarr_api_key}, timeout=30)
+        root_dirs_resp.raise_for_status()
+        root_dirs = root_dirs_resp.json()
+        if not root_dirs:
+            print("No root folders found in Radarr.")
             return
-            
-        root_dir = root_folders[0]['path']
-        print(f"[DEBUG] Using root directory: {root_dir}")
-        
-    except requests.RequestException as e:
-        print(f"Error connecting to Radarr: {e}")
-        return
+        root_folder = root_dirs[0]['path']
+        print(f"[DEBUG] Using root folder: {root_folder}")
     except Exception as e:
-        print(f"Error getting root folder: {e}")
+        print(f"[ERROR] Could not get root folder from Radarr: {e}")
         return
     
     # Process each movie
@@ -84,58 +74,58 @@ def radarr_monitor_add_from_plex_cache():
         if not tmdb_id:
             print(f"[DEBUG] Skipping '{name}' - no TMDB ID")
             continue
-            
+        
         print(f"[DEBUG] Processing: {name} (TMDB ID: {tmdb_id})")
         
         try:
-            # Look up movie by TMDB ID
-            movie_response = requests.get(
-                f"{radarr_host}/api/v3/movie/lookup/tmdb?tmdbId={tmdb_id}", 
-                params={"apikey": radarr_api_key}, 
+            # Check if already in Radarr
+            lookup_resp = requests.get(
+                f"{radarr_host}/api/v3/movie/lookup/tmdb?tmdbId={tmdb_id}",
+                headers={"X-Api-Key": radarr_api_key},
                 timeout=30
             )
-            movie_response.raise_for_status()
-            movie = movie_response.json()
-            
-            if not movie:
-                # Movie not found in Radarr
-                date_checked = format_date()
-                film['availability'] = f"Unable To Find on Radarr [{date_checked}]"
+            lookup_resp.raise_for_status()
+            lookup_data = lookup_resp.json()
+            if not lookup_data:
+                film['availability'] = f"Unable To Find on Radarr [{format_date()}]"
                 print(f"✗ {name} not found in Radarr")
                 updated_count += 1
                 continue
             
-            # Configure movie settings
-            movie["QualityProfileId"] = 1
-            movie["rootFolderPath"] = root_dir
-            movie["monitored"] = True
-            movie["searchOnAdd"] = True
+            # Prepare add payload
+            add_payload = {
+                "title": lookup_data['title'],
+                "qualityProfileId": 1,  # You may want to make this configurable
+                "titleSlug": lookup_data['titleSlug'],
+                "images": lookup_data.get('images', []),
+                "tmdbId": lookup_data['tmdbId'],
+                "year": lookup_data.get('year'),
+                "rootFolderPath": root_folder,
+                "monitored": True,
+                "addOptions": {"searchForMovie": True}
+            }
             
-            # Add movie to Radarr
-            add_response = requests.post(
-                f"{radarr_host}/api/v3/movie", 
-                params={"apikey": radarr_api_key}, 
-                json=movie,
+            add_resp = requests.post(
+                f"{radarr_host}/api/v3/movie",
+                headers={"X-Api-Key": radarr_api_key, "Content-Type": "application/json"},
+                json=add_payload,
                 timeout=30
             )
-            add_response.raise_for_status()
             
-            # Update cache with success
-            date_requested = format_date()
-            film['availability'] = f"Requested on [{date_requested}]"
-            print(f"✓ Added {name} to Radarr monitoring")
-            updated_count += 1
-            
-        except requests.RequestException as e:
-            # Network/API error
-            date_error = format_date()
-            film['availability'] = f"Error: {str(e)} [{date_error}]"
-            print(f"✗ Error requesting {name}: {e}")
-            updated_count += 1
+            if add_resp.status_code == 201:
+                film['availability'] = f"Requested on [{format_date()}]"
+                print(f"✓ Added {name} to Radarr requests")
+                updated_count += 1
+            elif add_resp.status_code == 400 and 'movie exists' in add_resp.text.lower():
+                film['availability'] = f"Already Requested [{format_date()}]"
+                print(f"ℹ {name} already requested in Radarr")
+                updated_count += 1
+            else:
+                film['availability'] = f"Error: {add_resp.text} [{format_date()}]"
+                print(f"✗ Error requesting {name}: {add_resp.text}")
+                updated_count += 1
         except Exception as e:
-            # Unexpected error
-            date_error = format_date()
-            film['availability'] = f"Error: {str(e)} [{date_error}]"
+            film['availability'] = f"Error: {str(e)} [{format_date()}]"
             print(f"✗ Unexpected error processing {name}: {e}")
             updated_count += 1
     
@@ -148,4 +138,4 @@ def radarr_monitor_add_from_plex_cache():
         print("No updates made to Plex cache.")
 
 if __name__ == '__main__':
-    radarr_monitor_add_from_plex_cache()
+    radarr_monitor_add_from_plex_cache() 

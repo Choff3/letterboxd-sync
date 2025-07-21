@@ -162,3 +162,7 @@ cython_debug/
 build.sh
 
 letterboxdStructure.html
+
+# Ignore all cache files
+cache/
+logs/
