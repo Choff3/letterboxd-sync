@@ -4,6 +4,13 @@ from dotenv import load_dotenv
 import sys
 from logger import setup_logging, get_logger
 
+# Set up absolute paths for cache files
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_DIR = os.path.join(BASE_DIR, 'cache')
+LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_cache.json')
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
+
 # Import all modules
 from list_scraper import scrape_list
 from tmdb_lookup_from_letterboxd import tmdb_lookup_all
@@ -22,7 +29,7 @@ def main():
     # SECTION 1: SCRAPE LETTERBOXD WATCHLIST
     # ============================================================================
     # Uncomment the next line to run the Letterboxd scraper
-    # RUN_SCRAPER = True
+    RUN_SCRAPER = True
     
     if 'RUN_SCRAPER' in locals():
         logger.info("--- Step 1: Scraping Letterboxd Watchlist ---")
@@ -57,13 +64,12 @@ def main():
         logger.info("--- Step 2: TMDB Lookup ---")
         
         # Check if Letterboxd cache exists
-        letterboxd_cache = 'cache/letterboxd_cache.json'
-        if not os.path.exists(letterboxd_cache):
-            logger.error(f"Letterboxd cache file '{letterboxd_cache}' not found")
+        if not os.path.exists(LETTERBOXD_CACHE):
+            logger.error(f"Letterboxd cache file '{LETTERBOXD_CACHE}' not found")
             logger.error("Please run the scraper first (enable RUN_SCRAPER)")
             sys.exit(1)
         
-        tmdb_results = tmdb_lookup_all()
+        tmdb_results = tmdb_lookup_all(letterboxd_cache=LETTERBOXD_CACHE, tmdb_cache=TMDB_CACHE)
         if not tmdb_results:
             logger.error("No TMDB results found")
             sys.exit(1)
@@ -84,9 +90,8 @@ def main():
         logger.info("--- Step 3: Plex Playlist Creation ---")
         
         # Check if TMDB cache exists
-        tmdb_cache = 'cache/tmdb_cache.json'
-        if not os.path.exists(tmdb_cache):
-            logger.error(f"TMDB cache file '{tmdb_cache}' not found")
+        if not os.path.exists(TMDB_CACHE):
+            logger.error(f"TMDB cache file '{TMDB_CACHE}' not found")
             logger.error("Please run TMDB lookup first (enable RUN_TMDB_LOOKUP)")
             sys.exit(1)
         
@@ -116,9 +121,8 @@ def main():
         logger.info("--- Step 4: Overseerr Requests ---")
         
         # Check if Plex cache exists
-        plex_cache = 'cache/plex_cache.json'
-        if not os.path.exists(plex_cache):
-            logger.error(f"Plex cache file '{plex_cache}' not found")
+        if not os.path.exists(PLEX_CACHE):
+            logger.error(f"Plex cache file '{PLEX_CACHE}' not found")
             logger.error("Please run Plex playlist creation first (enable RUN_PLEX_PLAYLIST)")
             sys.exit(1)
         

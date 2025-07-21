@@ -4,7 +4,11 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 
-PLEX_CACHE = 'cache/plex_cache.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_DIR = os.path.join(BASE_DIR, 'cache')
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
 
 def format_date(date=None):
     if not date:

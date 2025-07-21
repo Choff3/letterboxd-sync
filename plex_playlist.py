@@ -5,8 +5,12 @@ from datetime import datetime
 from plexapi.server import PlexServer
 from dotenv import load_dotenv
 
-TMDB_CACHE = 'cache/tmdb_cache.json'
-PLEX_CACHE = 'cache/plex_cache.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_DIR = os.path.join(BASE_DIR, 'cache')
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
 PLAYLIST_NAME = 'Letterboxd Watchlist'
 
 load_dotenv()

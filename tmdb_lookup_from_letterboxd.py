@@ -6,8 +6,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')
-LETTERBOXD_CACHE = 'cache/letterboxd_cache.json'
-TMDB_CACHE = 'cache/tmdb_cache.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CACHE_DIR = os.path.join(BASE_DIR, 'cache')
+os.makedirs(CACHE_DIR, exist_ok=True)
+
+LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_cache.json')
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
 
 def get_tmdb_id_from_api(title, year=None, api_key=None):
     if not api_key:
@@ -38,7 +42,7 @@ def get_tmdb_id_from_api(title, year=None, api_key=None):
         print(f"[TMDB] API error for '{title}': {e}")
     return None
 
-def tmdb_lookup_all(letterboxd_cache='cache/letterboxd_cache.json', tmdb_cache='cache/tmdb_cache.json', api_key=None):
+def tmdb_lookup_all(letterboxd_cache=LETTERBOXD_CACHE, tmdb_cache=TMDB_CACHE, api_key=None):
     if not api_key:
         load_dotenv()
         api_key = os.getenv('TMDB_API_KEY', '')
