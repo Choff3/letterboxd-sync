@@ -60,30 +60,30 @@ docker run --rm \
     choff3/letterboxd-sync
 ```
 
-### Scheduled Execution
+## Scheduled Execution (Run Every 15 Minutes)
 
-You can set up a cron job to run this script periodically:
+You can use cron to run the script automatically every 15 minutes:
 
-```bash
-# Add to crontab (runs every 6 hours)
-0 */6 * * * cd /path/to/letterboxd-sync && python3 main.py
-```
+1. **Open Terminal**
+2. Edit your crontab:
+   ```bash
+   crontab -e
+   ```
+3. Add this line (replace `/path/to/letterboxd-sync` with your actual project path):
+   ```
+   */15 * * * * cd /path/to/letterboxd-sync && /usr/bin/env python3 main.py >> logs/cron.log 2>&1
+   ```
+4. **Save and exit:**
+   - Press `Esc`, then type `:wq`, then press `Enter`
+5. **Check your cron jobs:**
+   ```bash
+   crontab -l
+   ```
+
+This will run the script every 15 minutes and log output to `logs/cron.log`.
 
 ## Troubleshooting
 
 ### Debug Mode
 
-Set the `DEBUG` environment variable to see more detailed output:
-
-```bash
-export DEBUG=1
-python3 main.py
-```
-
-## Acknowledgments
-
-Thanks to Teddy for providing all these services and writing the first version of this. https://github.com/L-Dot/Letterboxd-list-scraper
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Set the `
