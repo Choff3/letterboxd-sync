@@ -1,5 +1,20 @@
 [
   {
+    "film_name": "Jurassic World Rebirth",
+    "year": "",
+    "tmdb_id": "1234821"
+  },
+  {
+    "film_name": "But I'm a Cheerleader",
+    "year": "",
+    "tmdb_id": "20770"
+  },
+  {
+    "film_name": "Hackers",
+    "year": "",
+    "tmdb_id": "10428"
+  },
+  {
     "film_name": "The Girl with the Dragon Tattoo",
     "year": "2011",
     "tmdb_id": "65754"
@@ -617,7 +632,7 @@
   {
     "film_name": "Monster",
     "year": "",
-    "tmdb_id": "489932"
+    "tmdb_id": "896166"
   },
   {
     "film_name": "In the Cut",

@@ -1,0 +1,47 @@
+{
+  "ambient": {
+    "title": "ambient",
+    "movies": [
+      {
+        "film_id": "50692",
+        "film_slug": "the-sea-inside",
+        "film_link": null,
+        "poster_url": "/film/the-sea-inside/image-150/",
+        "film_name": "The Sea Inside",
+        "year": "",
+        "date_scraped": "jul 21 2025 12:58am"
+      },
+      {
+        "film_id": "45335",
+        "film_slug": "look-at-me",
+        "film_link": null,
+        "poster_url": "/film/look-at-me/image-150/",
+        "film_name": "Look at Me",
+        "year": "",
+        "date_scraped": "jul 21 2025 12:58am"
+      },
+      {
+        "film_id": "64600",
+        "film_slug": "miss-kicki",
+        "film_link": null,
+        "poster_url": "/film/miss-kicki/image-150/",
+        "film_name": "Miss Kicki",
+        "year": "",
+        "date_scraped": "jul 21 2025 12:58am"
+      },
+      {
+        "film_id": "18006",
+        "film_slug": "little-girl-blue",
+        "film_link": null,
+        "poster_url": "/film/little-girl-blue/image-150/",
+        "film_name": "Little Girl Blue",
+        "year": "",
+        "date_scraped": "jul 21 2025 12:58am"
+      }
+    ]
+  },
+  "list/should-rewatch": {
+    "title": "list/should-rewatch",
+    "movies": []
+  }
+}

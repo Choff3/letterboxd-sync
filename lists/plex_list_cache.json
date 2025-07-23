@@ -1,0 +1,198 @@
+{
+  "ambient": [
+    {
+      "film_name": "PlayTime",
+      "tmdb_id": "10227",
+      "date_added": "jul 21 2025 01:25am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Time Masters",
+      "tmdb_id": "22501",
+      "date_added": "jul 21 2025 01:25am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Ran",
+      "tmdb_id": "635736",
+      "date_added": "jul 21 2025 01:25am",
+      "availability": "Available in Library"
+    }
+  ],
+  "should-rewatch": [
+    {
+      "film_name": "Steve Jobs",
+      "tmdb_id": "321697",
+      "date_added": "jul 21 2025 01:25am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "A Bug's Life",
+      "tmdb_id": "9487",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Billy Madison",
+      "tmdb_id": "11017",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Capote",
+      "tmdb_id": "398",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Citizen Kane",
+      "tmdb_id": "15",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Being John Malkovich",
+      "tmdb_id": "492",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Beetlejuice",
+      "tmdb_id": "4011",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "ATL",
+      "tmdb_id": "13960",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Fear and Loathing in Las Vegas",
+      "tmdb_id": "1878",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "25th Hour",
+      "tmdb_id": "66568",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Juno",
+      "tmdb_id": "7326",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "There Will Be Blood",
+      "tmdb_id": "7345",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "No Country for Old Men",
+      "tmdb_id": "6977",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "My Left Foot: The Story of Christy Brown",
+      "tmdb_id": "10161",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "American Psycho",
+      "tmdb_id": "1359",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Little Women",
+      "tmdb_id": "331482",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "The Lighthouse",
+      "tmdb_id": "503919",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Uncut Gems",
+      "tmdb_id": "473033",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Mad Max: Fury Road",
+      "tmdb_id": "76341",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Dead Poets Society",
+      "tmdb_id": "207",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Reservoir Dogs",
+      "tmdb_id": "500",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Fargo",
+      "tmdb_id": "275",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Fantastic Planet",
+      "tmdb_id": "16306",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Brokeback Mountain",
+      "tmdb_id": "142",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Edge of the Knife",
+      "tmdb_id": "539883",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Clueless",
+      "tmdb_id": "9603",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "sex, lies, and videotape",
+      "tmdb_id": "1412",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Amadeus",
+      "tmdb_id": "279",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Heretic",
+      "tmdb_id": "1138194",
+      "date_added": "jul 21 2025 01:26am",
+      "availability": "Available in Library"
+    }
+  ]
+}

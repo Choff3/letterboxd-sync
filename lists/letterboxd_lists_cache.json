@@ -1,0 +1,204 @@
+{
+  "ambient": {
+    "title": "ambient",
+    "movies": [
+      {
+        "film_name": "PlayTime",
+        "year": "",
+        "tmdb_id": "10227",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Time Masters",
+        "year": "",
+        "tmdb_id": "22501",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Ran",
+        "year": "",
+        "tmdb_id": "635736",
+        "date_scraped": "jul 21 2025 01:25am"
+      }
+    ]
+  },
+  "should-rewatch": {
+    "title": "should-rewatch",
+    "movies": [
+      {
+        "film_name": "Steve Jobs",
+        "year": "",
+        "tmdb_id": "321697",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "A Bug's Life",
+        "year": "",
+        "tmdb_id": "9487",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Billy Madison",
+        "year": "",
+        "tmdb_id": "11017",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Capote",
+        "year": "",
+        "tmdb_id": "398",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Citizen Kane",
+        "year": "",
+        "tmdb_id": "15",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Being John Malkovich",
+        "year": "",
+        "tmdb_id": "492",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Beetlejuice",
+        "year": "",
+        "tmdb_id": "4011",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "ATL",
+        "year": "",
+        "tmdb_id": "13960",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Fear and Loathing in Las Vegas",
+        "year": "",
+        "tmdb_id": "1878",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "25th Hour",
+        "year": "",
+        "tmdb_id": "66568",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Juno",
+        "year": "",
+        "tmdb_id": "7326",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "There Will Be Blood",
+        "year": "",
+        "tmdb_id": "7345",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "No Country for Old Men",
+        "year": "",
+        "tmdb_id": "6977",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "My Left Foot: The Story of Christy Brown",
+        "year": "",
+        "tmdb_id": "10161",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "American Psycho",
+        "year": "",
+        "tmdb_id": "1359",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Little Women",
+        "year": "2019",
+        "tmdb_id": "331482",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "The Lighthouse",
+        "year": "2019",
+        "tmdb_id": "503919",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Uncut Gems",
+        "year": "",
+        "tmdb_id": "473033",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Mad Max: Fury Road",
+        "year": "",
+        "tmdb_id": "76341",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Dead Poets Society",
+        "year": "",
+        "tmdb_id": "207",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Reservoir Dogs",
+        "year": "",
+        "tmdb_id": "500",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Fargo",
+        "year": "",
+        "tmdb_id": "275",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Fantastic Planet",
+        "year": "",
+        "tmdb_id": "16306",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Brokeback Mountain",
+        "year": "",
+        "tmdb_id": "142",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Edge of the Knife",
+        "year": "",
+        "tmdb_id": "539883",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Clueless",
+        "year": "",
+        "tmdb_id": "9603",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "sex, lies, and videotape",
+        "year": "",
+        "tmdb_id": "1412",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Amadeus",
+        "year": "",
+        "tmdb_id": "279",
+        "date_scraped": "jul 21 2025 01:25am"
+      },
+      {
+        "film_name": "Heretic",
+        "year": "2024",
+        "tmdb_id": "1138194",
+        "date_scraped": "jul 21 2025 01:25am"
+      }
+    ]
+  }
+}
