@@ -1,4 +1,93 @@
 {
+  "serious-movie-time": {
+    "title": "Serious movie time \ud83c\udf7f",
+    "movies": [
+      {
+        "film_name": "Y Tu Mam\u00e1 Tambi\u00e9n",
+        "year": "",
+        "tmdb_id": "1391",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Mother",
+        "year": "2009",
+        "tmdb_id": "698885",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "2001: A Space Odyssey",
+        "year": "",
+        "tmdb_id": "62",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Mulholland Drive",
+        "year": "",
+        "tmdb_id": "1018",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "The Cremator",
+        "year": "",
+        "tmdb_id": "775517",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Demons",
+        "year": "1971",
+        "tmdb_id": "104548",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Funeral Parade of Roses",
+        "year": "",
+        "tmdb_id": "1556",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Tokyo Story",
+        "year": "",
+        "tmdb_id": "18148",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Mad God",
+        "year": "",
+        "tmdb_id": "846867",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Videodrome",
+        "year": "",
+        "tmdb_id": "837",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Paisan",
+        "year": "",
+        "tmdb_id": "8429",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Only Angels Have Wings",
+        "year": "",
+        "tmdb_id": "43832",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Barry Lyndon",
+        "year": "",
+        "tmdb_id": "3175",
+        "date_scraped": "jul 25 2025 01:18pm"
+      },
+      {
+        "film_name": "Embrace of the Serpent",
+        "year": "",
+        "tmdb_id": "336808",
+        "date_scraped": "jul 25 2025 01:18pm"
+      }
+    ]
+  },
   "ambient": {
     "title": "Ambient",
     "movies": [
@@ -6,19 +95,19 @@
         "film_name": "PlayTime",
         "year": "",
         "tmdb_id": "10227",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Time Masters",
         "year": "",
         "tmdb_id": "22501",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Ran",
         "year": "",
         "tmdb_id": "635736",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       }
     ]
   },
@@ -29,175 +118,175 @@
         "film_name": "Steve Jobs",
         "year": "",
         "tmdb_id": "321697",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "A Bug's Life",
         "year": "",
         "tmdb_id": "9487",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Billy Madison",
         "year": "",
         "tmdb_id": "11017",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Capote",
         "year": "",
         "tmdb_id": "398",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Citizen Kane",
         "year": "",
         "tmdb_id": "15",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Being John Malkovich",
         "year": "",
         "tmdb_id": "492",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Beetlejuice",
         "year": "",
         "tmdb_id": "4011",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "ATL",
         "year": "",
         "tmdb_id": "13960",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Fear and Loathing in Las Vegas",
         "year": "",
         "tmdb_id": "1878",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "25th Hour",
         "year": "",
         "tmdb_id": "66568",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Juno",
         "year": "",
         "tmdb_id": "7326",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "There Will Be Blood",
         "year": "",
         "tmdb_id": "7345",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "No Country for Old Men",
         "year": "",
         "tmdb_id": "6977",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "My Left Foot: The Story of Christy Brown",
         "year": "",
         "tmdb_id": "10161",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "American Psycho",
         "year": "",
         "tmdb_id": "1359",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Little Women",
         "year": "2019",
         "tmdb_id": "331482",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "The Lighthouse",
         "year": "2019",
         "tmdb_id": "503919",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Uncut Gems",
         "year": "",
         "tmdb_id": "473033",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Mad Max: Fury Road",
         "year": "",
         "tmdb_id": "76341",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Dead Poets Society",
         "year": "",
         "tmdb_id": "207",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Reservoir Dogs",
         "year": "",
         "tmdb_id": "500",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Fargo",
         "year": "",
         "tmdb_id": "275",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Fantastic Planet",
         "year": "",
         "tmdb_id": "16306",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Brokeback Mountain",
         "year": "",
         "tmdb_id": "142",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Edge of the Knife",
         "year": "",
         "tmdb_id": "539883",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Clueless",
         "year": "",
         "tmdb_id": "9603",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "sex, lies, and videotape",
         "year": "",
         "tmdb_id": "1412",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Amadeus",
         "year": "",
         "tmdb_id": "279",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       },
       {
         "film_name": "Heretic",
         "year": "2024",
         "tmdb_id": "1138194",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:18pm"
       }
     ]
   },
@@ -208,37 +297,37 @@
         "film_name": "Alien: Romulus",
         "year": "",
         "tmdb_id": "945961",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Bridget Jones's Diary",
         "year": "",
         "tmdb_id": "634",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Men in Black",
         "year": "",
         "tmdb_id": "607",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Pan's Labyrinth",
         "year": "",
         "tmdb_id": "1417",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Sinners",
         "year": "2025",
         "tmdb_id": "1233413",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Pineapple Express",
         "year": "",
         "tmdb_id": "10189",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       }
     ]
   },
@@ -249,229 +338,229 @@
         "film_name": "The Land Before Time II: The Great Valley Adventure",
         "year": "",
         "tmdb_id": "15997",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Big Lebowski",
         "year": "",
         "tmdb_id": "115",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Paddington",
         "year": "",
         "tmdb_id": "116149",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Paddington 2",
         "year": "",
         "tmdb_id": "346648",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Harry Potter and the Philosopher's Stone",
         "year": "",
         "tmdb_id": "671",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Harry Potter and the Chamber of Secrets",
         "year": "",
         "tmdb_id": "672",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Harry Potter and the Prisoner of Azkaban",
         "year": "",
         "tmdb_id": "673",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Matilda",
         "year": "",
         "tmdb_id": "10830",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Princess Bride",
         "year": "",
         "tmdb_id": "2493",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Rogue One: A Star Wars Story",
         "year": "",
         "tmdb_id": "330459",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Emperor's New Groove",
         "year": "",
         "tmdb_id": "11688",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Paper Moon",
         "year": "",
         "tmdb_id": "11293",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Anchorman: The Legend of Ron Burgundy",
         "year": "",
         "tmdb_id": "8699",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Knocked Up",
         "year": "",
         "tmdb_id": "4964",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Walk Hard: The Dewey Cox Story",
         "year": "",
         "tmdb_id": "6575",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Talladega Nights: The Ballad of Ricky Bobby",
         "year": "",
         "tmdb_id": "9718",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Spider-Man: Homecoming",
         "year": "",
         "tmdb_id": "315635",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Taxi Driver",
         "year": "",
         "tmdb_id": "103",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Lord of the Rings: The Fellowship of the Ring",
         "year": "",
         "tmdb_id": "120",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Ratatouille",
         "year": "",
         "tmdb_id": "2062",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Star Wars: The Force Awakens",
         "year": "",
         "tmdb_id": "140607",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "WALL\u00b7E",
         "year": "",
         "tmdb_id": "1269208",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Lion King",
         "year": "",
         "tmdb_id": "8587",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Legally Blonde",
         "year": "",
         "tmdb_id": "8835",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "O Brother, Where Art Thou?",
         "year": "",
         "tmdb_id": "134",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Rush Hour",
         "year": "",
         "tmdb_id": "2109",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Sleepy Hollow",
         "year": "",
         "tmdb_id": "2668",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Home Alone",
         "year": "",
         "tmdb_id": "252171",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Muppet Christmas Carol",
         "year": "",
         "tmdb_id": "10437",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Hercules",
         "year": "1997",
         "tmdb_id": "11970",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Bridget Jones's Diary",
         "year": "",
         "tmdb_id": "634",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Clueless",
         "year": "",
         "tmdb_id": "9603",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Bone Collector",
         "year": "",
         "tmdb_id": "9481",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Hateful Eight",
         "year": "",
         "tmdb_id": "273248",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Shaun of the Dead",
         "year": "",
         "tmdb_id": "747",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Banshees of Inisherin",
         "year": "",
         "tmdb_id": "674324",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Elizabeth",
         "year": "",
         "tmdb_id": "4518",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "You've Got Mail",
         "year": "",
         "tmdb_id": "9489",
-        "date_scraped": "jul 23 2025 06:10pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       }
     ]
   },
@@ -482,13 +571,13 @@
         "film_name": "Hundreds of Beavers",
         "year": "",
         "tmdb_id": "1019939",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "You've Got Mail",
         "year": "",
         "tmdb_id": "9489",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       }
     ]
   },
@@ -499,61 +588,61 @@
         "film_name": "Barry Lyndon",
         "year": "",
         "tmdb_id": "3175",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Amadeus",
         "year": "",
         "tmdb_id": "279",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Favourite",
         "year": "",
         "tmdb_id": "375262",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Elizabeth",
         "year": "",
         "tmdb_id": "4518",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Sense and Sensibility",
         "year": "",
         "tmdb_id": "4584",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Portrait of a Lady on Fire",
         "year": "",
         "tmdb_id": "531428",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Pride & Prejudice",
         "year": "",
         "tmdb_id": "874333",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Elizabeth: The Golden Age",
         "year": "",
         "tmdb_id": "4517",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Mary Queen of Scots",
         "year": "2018",
         "tmdb_id": "457136",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Last Duel",
         "year": "2021",
         "tmdb_id": "617653",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       }
     ]
   },
@@ -564,67 +653,67 @@
         "film_name": "The Housemaid",
         "year": "",
         "tmdb_id": "1368166",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Ran",
         "year": "",
         "tmdb_id": "635736",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Drunken Angel",
         "year": "",
         "tmdb_id": "25858",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Stray Dog",
         "year": "",
         "tmdb_id": "483455",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "The Hidden Fortress",
         "year": "",
         "tmdb_id": "130405",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Yojimbo",
         "year": "",
         "tmdb_id": "42601",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "High and Low",
         "year": "",
         "tmdb_id": "12493",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Rashomon",
         "year": "",
         "tmdb_id": "548",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Seven Samurai",
         "year": "",
         "tmdb_id": "346",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Ikiru",
         "year": "",
         "tmdb_id": "3782",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       },
       {
         "film_name": "Throne of Blood",
         "year": "",
         "tmdb_id": "3777",
-        "date_scraped": "jul 23 2025 06:11pm"
+        "date_scraped": "jul 25 2025 01:19pm"
       }
     ]
   },
@@ -635,25 +724,25 @@
         "film_name": "Lilo & Stitch",
         "year": "",
         "tmdb_id": "552524",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Office Space",
         "year": "",
         "tmdb_id": "1542",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Witch",
         "year": "2015",
         "tmdb_id": "310131",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Hateful Eight",
         "year": "",
         "tmdb_id": "273248",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       }
     ]
   },
@@ -664,342 +753,247 @@
         "film_name": "Blade",
         "year": "",
         "tmdb_id": "36647",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Crimson Tide",
         "year": "",
         "tmdb_id": "8963",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Batman Forever",
         "year": "",
         "tmdb_id": "414",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Ben Is Back",
         "year": "",
         "tmdb_id": "492452",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Boys Don't Cry",
         "year": "",
         "tmdb_id": "226",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Black Coal, Thin Ice",
         "year": "",
         "tmdb_id": "255756",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Bones Brigade: An Autobiography",
         "year": "",
         "tmdb_id": "84179",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "A Touch of Sin",
         "year": "",
         "tmdb_id": "187022",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "David Byrne's American Utopia",
         "year": "",
         "tmdb_id": "668800",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Da 5 Bloods",
         "year": "",
         "tmdb_id": "581859",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Coherence",
         "year": "",
         "tmdb_id": "220289",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Coriolanus",
         "year": "",
         "tmdb_id": "790861",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Hold Me Tight",
         "year": "",
         "tmdb_id": "756651",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "FernGully: The Last Rainforest",
         "year": "",
         "tmdb_id": "13225",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "I \u2665 Huckabees",
         "year": "",
         "tmdb_id": "1599",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Chip 'n Dale: Rescue Rangers",
         "year": "",
         "tmdb_id": "420821",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Extract",
         "year": "",
         "tmdb_id": "12569",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Decameron",
         "year": "",
         "tmdb_id": "526537",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Zootopia",
         "year": "",
         "tmdb_id": "269149",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "A Room with a View",
         "year": "",
         "tmdb_id": "11257",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Sour Grapes",
         "year": "",
         "tmdb_id": "396232",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The VelociPastor",
         "year": "",
         "tmdb_id": "457712",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Vampire's Kiss",
         "year": "",
         "tmdb_id": "7091",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Tiny Furniture",
         "year": "",
         "tmdb_id": "47607",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Click",
         "year": "",
-        "tmdb_id": "9339",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "tmdb_id": "1289359",
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Royal Tenenbaums",
         "year": "",
         "tmdb_id": "9428",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Mamma Mia!",
         "year": "",
         "tmdb_id": "11631",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Lincoln",
         "year": "",
         "tmdb_id": "340036",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Age of Innocence",
         "year": "",
         "tmdb_id": "10436",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Last of the Mohicans",
         "year": "1992",
         "tmdb_id": "9361",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Okja",
         "year": "",
         "tmdb_id": "387426",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Inception",
         "year": "",
         "tmdb_id": "27205",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Gone Girl",
         "year": "",
         "tmdb_id": "210577",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Arrival",
         "year": "2016",
         "tmdb_id": "329865",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Perks of Being a Wallflower",
         "year": "",
         "tmdb_id": "84892",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Suicide Squad",
         "year": "",
         "tmdb_id": "436969",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "My Neighbor Totoro",
         "year": "",
         "tmdb_id": "8392",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Lost in Translation",
         "year": "",
         "tmdb_id": "153",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Swingers",
         "year": "",
         "tmdb_id": "93685",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Chef",
         "year": "",
         "tmdb_id": "1367841",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Clueless",
         "year": "",
         "tmdb_id": "9603",
-        "date_scraped": "jul 23 2025 06:12pm"
-      }
-    ]
-  },
-  "serious-movie-time": {
-    "title": "Serious movie time \ud83c\udf7f",
-    "movies": [
-      {
-        "film_name": "Y Tu Mam\u00e1 Tambi\u00e9n",
-        "year": "",
-        "tmdb_id": "1391",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Call Me by Your Name",
-        "year": "",
-        "tmdb_id": "398818",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Mother",
-        "year": "2009",
-        "tmdb_id": "698885",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "2001: A Space Odyssey",
-        "year": "",
-        "tmdb_id": "62",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Mulholland Drive",
-        "year": "",
-        "tmdb_id": "1018",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "The Cremator",
-        "year": "",
-        "tmdb_id": "775517",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Demons",
-        "year": "1971",
-        "tmdb_id": "104548",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Funeral Parade of Roses",
-        "year": "",
-        "tmdb_id": "1556",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Tokyo Story",
-        "year": "",
-        "tmdb_id": "18148",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Mad God",
-        "year": "",
-        "tmdb_id": "846867",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Videodrome",
-        "year": "",
-        "tmdb_id": "837",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Paisan",
-        "year": "",
-        "tmdb_id": "8429",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Only Angels Have Wings",
-        "year": "",
-        "tmdb_id": "43832",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Barry Lyndon",
-        "year": "",
-        "tmdb_id": "3175",
-        "date_scraped": "jul 23 2025 06:12pm"
-      },
-      {
-        "film_name": "Embrace of the Serpent",
-        "year": "",
-        "tmdb_id": "336808",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       }
     ]
   },
@@ -1010,19 +1004,19 @@
         "film_name": "The Cruise",
         "year": "",
         "tmdb_id": "1080838",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Bridget Jones's Diary",
         "year": "",
         "tmdb_id": "634",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Office Space",
         "year": "",
         "tmdb_id": "1542",
-        "date_scraped": "jul 23 2025 06:12pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       }
     ]
   },
@@ -1033,61 +1027,61 @@
         "film_name": "Out of the Past",
         "year": "",
         "tmdb_id": "678",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Paris Does Not Exist",
         "year": "",
         "tmdb_id": "66149",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Click",
         "year": "",
-        "tmdb_id": "9339",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "tmdb_id": "1289359",
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Zookeeper",
         "year": "",
         "tmdb_id": "38317",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Batman",
         "year": "",
         "tmdb_id": "414906",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Dune",
         "year": "2021",
         "tmdb_id": "438631",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Drive",
         "year": "2011",
         "tmdb_id": "64690",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "The Breakfast Club",
         "year": "",
         "tmdb_id": "2108",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Tron",
         "year": "",
         "tmdb_id": "97",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       },
       {
         "film_name": "Swingers",
         "year": "",
         "tmdb_id": "93685",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:20pm"
       }
     ]
   },
@@ -1098,7 +1092,7 @@
         "film_name": "Boys Don't Cry",
         "year": "",
         "tmdb_id": "226",
-        "date_scraped": "jul 23 2025 06:13pm"
+        "date_scraped": "jul 25 2025 01:21pm"
       }
     ]
   }

@@ -16,6 +16,8 @@ from list_scraper import scrape_list
 from tmdb_lookup_from_letterboxd import tmdb_lookup_all
 from plex_playlist import main as plex_playlist_main
 from overseerr_monitor import overseerr_monitor_add_from_plex_cache
+# Add import for the new multi-list sync
+from lists.letterboxd_lists_to_plex import main as letterboxd_lists_to_plex_main
 
 def main():
     # Setup logging
@@ -81,13 +83,13 @@ def main():
         logger.info("Skipping TMDB lookup (RUN_TMDB_LOOKUP not enabled)")
     
     # ============================================================================
-    # SECTION 3: PLEX PLAYLIST CREATION
+    # SECTION 3: PLEX WATCHLIST PLAYLIST CREATION
     # ============================================================================
     # Uncomment the next line to create/update Plex playlist
     RUN_PLEX_PLAYLIST = True
     
     if 'RUN_PLEX_PLAYLIST' in locals():
-        logger.info("--- Step 3: Plex Playlist Creation ---")
+        logger.info("--- Step 3: Plex Watchlist Creation ---")
         
         # Check if TMDB cache exists
         if not os.path.exists(TMDB_CACHE):
@@ -104,12 +106,12 @@ def main():
         
         try:
             plex_playlist_main()
-            logger.info("Plex playlist creation completed successfully!")
+            logger.info("Plex watchlist playlist creation completed successfully!")
         except Exception as e:
             logger.error(f"Error creating Plex playlist: {e}")
             sys.exit(1)
     else:
-        logger.info("Skipping Plex playlist creation (RUN_PLEX_PLAYLIST not enabled)")
+        logger.info("Skipping Plex watchlist creation (RUN_PLEX_PLAYLIST not enabled)")
     
     # ============================================================================
     # SECTION 4: OVERSEERR REQUESTS
@@ -141,6 +143,22 @@ def main():
             sys.exit(1)
     else:
         logger.info("Skipping Overseerr requests (RUN_OVERSEERR_REQUESTS not enabled)")
+    
+    # ============================================================================
+    # SECTION 5: LETTERBOXD MULTI-LIST TO PLEX SYNC
+    # ============================================================================
+    RUN_LETTERBOXD_LISTS_TO_PLEX = True
+
+    if 'RUN_LETTERBOXD_LISTS_TO_PLEX' in locals():
+        logger.info("--- Step 5: Letterboxd Multi-List to Plex Sync ---")
+        try:
+            letterboxd_lists_to_plex_main()
+            logger.info("Letterboxd multi-list to Plex sync completed successfully!")
+        except Exception as e:
+            logger.error(f"Error in Letterboxd multi-list to Plex sync: {e}")
+            sys.exit(1)
+    else:
+        logger.info("Skipping Letterboxd multi-list to Plex sync (RUN_LETTERBOXD_LISTS_TO_PLEX not enabled)")
     
     # ============================================================================
     # COMPLETION

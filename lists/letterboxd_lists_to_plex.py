@@ -214,7 +214,7 @@ def plex_playlists_from_lists_cache(lists_cache):
 
 def main():
     # Step 1: Run get_letterboxd_lists.py to get all lists and names
-    from get_letterboxd_lists import test_scrape_lists_page_to_json
+    from lists.get_letterboxd_lists import test_scrape_lists_page_to_json
     test_scrape_lists_page_to_json()
     # Step 2: Load list_names.json
     with open(LIST_NAMES_FILE, 'r') as f:

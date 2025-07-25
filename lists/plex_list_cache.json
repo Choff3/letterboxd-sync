@@ -1,21 +1,107 @@
 {
+  "Serious movie time \ud83c\udf7f": [
+    {
+      "film_name": "Y Tu Mam\u00e1 Tambi\u00e9n",
+      "tmdb_id": "1391",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Mother",
+      "tmdb_id": "698885",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "2001: A Space Odyssey",
+      "tmdb_id": "62",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Mulholland Drive",
+      "tmdb_id": "1018",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "The Cremator",
+      "tmdb_id": "775517",
+      "date_added": "",
+      "availability": "Not in Library"
+    },
+    {
+      "film_name": "Demons",
+      "tmdb_id": "104548",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Funeral Parade of Roses",
+      "tmdb_id": "1556",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Tokyo Story",
+      "tmdb_id": "18148",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Mad God",
+      "tmdb_id": "846867",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Videodrome",
+      "tmdb_id": "837",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Paisan",
+      "tmdb_id": "8429",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Only Angels Have Wings",
+      "tmdb_id": "43832",
+      "date_added": "",
+      "availability": "Not in Library"
+    },
+    {
+      "film_name": "Barry Lyndon",
+      "tmdb_id": "3175",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    },
+    {
+      "film_name": "Embrace of the Serpent",
+      "tmdb_id": "336808",
+      "date_added": "jul 25 2025 01:21pm",
+      "availability": "Available in Library"
+    }
+  ],
   "Ambient": [
     {
       "film_name": "PlayTime",
       "tmdb_id": "10227",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Time Masters",
       "tmdb_id": "22501",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Ran",
       "tmdb_id": "635736",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -23,175 +109,175 @@
     {
       "film_name": "Steve Jobs",
       "tmdb_id": "321697",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "A Bug's Life",
       "tmdb_id": "9487",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Billy Madison",
       "tmdb_id": "11017",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Capote",
       "tmdb_id": "398",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Citizen Kane",
       "tmdb_id": "15",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Being John Malkovich",
       "tmdb_id": "492",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Beetlejuice",
       "tmdb_id": "4011",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "ATL",
       "tmdb_id": "13960",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Fear and Loathing in Las Vegas",
       "tmdb_id": "1878",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "25th Hour",
       "tmdb_id": "66568",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Juno",
       "tmdb_id": "7326",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "There Will Be Blood",
       "tmdb_id": "7345",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "No Country for Old Men",
       "tmdb_id": "6977",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "My Left Foot: The Story of Christy Brown",
       "tmdb_id": "10161",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "American Psycho",
       "tmdb_id": "1359",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Little Women",
       "tmdb_id": "331482",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Lighthouse",
       "tmdb_id": "503919",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Uncut Gems",
       "tmdb_id": "473033",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Mad Max: Fury Road",
       "tmdb_id": "76341",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Dead Poets Society",
       "tmdb_id": "207",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Reservoir Dogs",
       "tmdb_id": "500",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Fargo",
       "tmdb_id": "275",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Fantastic Planet",
       "tmdb_id": "16306",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Brokeback Mountain",
       "tmdb_id": "142",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Edge of the Knife",
       "tmdb_id": "539883",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Clueless",
       "tmdb_id": "9603",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "sex, lies, and videotape",
       "tmdb_id": "1412",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Amadeus",
       "tmdb_id": "279",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Heretic",
       "tmdb_id": "1138194",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -199,37 +285,37 @@
     {
       "film_name": "Alien: Romulus",
       "tmdb_id": "945961",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Bridget Jones's Diary",
       "tmdb_id": "634",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Men in Black",
       "tmdb_id": "607",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Pan's Labyrinth",
       "tmdb_id": "1417",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Sinners",
       "tmdb_id": "1233413",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Pineapple Express",
       "tmdb_id": "10189",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -243,19 +329,19 @@
     {
       "film_name": "The Big Lebowski",
       "tmdb_id": "115",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Paddington",
       "tmdb_id": "116149",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Paddington 2",
       "tmdb_id": "346648",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -267,199 +353,199 @@
     {
       "film_name": "Harry Potter and the Chamber of Secrets",
       "tmdb_id": "672",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Harry Potter and the Prisoner of Azkaban",
       "tmdb_id": "673",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Matilda",
       "tmdb_id": "10830",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Princess Bride",
       "tmdb_id": "2493",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Rogue One: A Star Wars Story",
       "tmdb_id": "330459",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Emperor's New Groove",
       "tmdb_id": "11688",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Paper Moon",
       "tmdb_id": "11293",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Anchorman: The Legend of Ron Burgundy",
       "tmdb_id": "8699",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Knocked Up",
       "tmdb_id": "4964",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Walk Hard: The Dewey Cox Story",
       "tmdb_id": "6575",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Talladega Nights: The Ballad of Ricky Bobby",
       "tmdb_id": "9718",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Spider-Man: Homecoming",
       "tmdb_id": "315635",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Taxi Driver",
       "tmdb_id": "103",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Lord of the Rings: The Fellowship of the Ring",
       "tmdb_id": "120",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Ratatouille",
       "tmdb_id": "2062",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Star Wars: The Force Awakens",
       "tmdb_id": "140607",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "WALL\u00b7E",
       "tmdb_id": "1269208",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Lion King",
       "tmdb_id": "8587",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Legally Blonde",
       "tmdb_id": "8835",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "O Brother, Where Art Thou?",
       "tmdb_id": "134",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Rush Hour",
       "tmdb_id": "2109",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Sleepy Hollow",
       "tmdb_id": "2668",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Home Alone",
       "tmdb_id": "252171",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Muppet Christmas Carol",
       "tmdb_id": "10437",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Hercules",
       "tmdb_id": "11970",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Bridget Jones's Diary",
       "tmdb_id": "634",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Clueless",
       "tmdb_id": "9603",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Bone Collector",
       "tmdb_id": "9481",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Hateful Eight",
       "tmdb_id": "273248",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Shaun of the Dead",
       "tmdb_id": "747",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Banshees of Inisherin",
       "tmdb_id": "674324",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Elizabeth",
       "tmdb_id": "4518",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "You've Got Mail",
       "tmdb_id": "9489",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -467,13 +553,13 @@
     {
       "film_name": "Hundreds of Beavers",
       "tmdb_id": "1019939",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "You've Got Mail",
       "tmdb_id": "9489",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -481,61 +567,61 @@
     {
       "film_name": "Barry Lyndon",
       "tmdb_id": "3175",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Amadeus",
       "tmdb_id": "279",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Favourite",
       "tmdb_id": "375262",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Elizabeth",
       "tmdb_id": "4518",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Sense and Sensibility",
       "tmdb_id": "4584",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Portrait of a Lady on Fire",
       "tmdb_id": "531428",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Pride & Prejudice",
       "tmdb_id": "874333",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Elizabeth: The Golden Age",
       "tmdb_id": "4517",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Mary Queen of Scots",
       "tmdb_id": "457136",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Last Duel",
       "tmdb_id": "617653",
-      "date_added": "jul 23 2025 06:13pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -543,67 +629,67 @@
     {
       "film_name": "The Housemaid",
       "tmdb_id": "1368166",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Ran",
       "tmdb_id": "635736",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Drunken Angel",
       "tmdb_id": "25858",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Stray Dog",
       "tmdb_id": "483455",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Hidden Fortress",
       "tmdb_id": "130405",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Yojimbo",
       "tmdb_id": "42601",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "High and Low",
       "tmdb_id": "12493",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Rashomon",
       "tmdb_id": "548",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Seven Samurai",
       "tmdb_id": "346",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Ikiru",
       "tmdb_id": "3782",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Throne of Blood",
       "tmdb_id": "3777",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -611,25 +697,25 @@
     {
       "film_name": "Lilo & Stitch",
       "tmdb_id": "552524",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Office Space",
       "tmdb_id": "1542",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Witch",
       "tmdb_id": "310131",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Hateful Eight",
       "tmdb_id": "273248",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -637,13 +723,13 @@
     {
       "film_name": "Blade",
       "tmdb_id": "36647",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Crimson Tide",
       "tmdb_id": "8963",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -655,67 +741,67 @@
     {
       "film_name": "Ben Is Back",
       "tmdb_id": "492452",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Boys Don't Cry",
       "tmdb_id": "226",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Black Coal, Thin Ice",
       "tmdb_id": "255756",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Bones Brigade: An Autobiography",
       "tmdb_id": "84179",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "A Touch of Sin",
       "tmdb_id": "187022",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "David Byrne's American Utopia",
       "tmdb_id": "668800",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Da 5 Bloods",
       "tmdb_id": "581859",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Coherence",
       "tmdb_id": "220289",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Coriolanus",
       "tmdb_id": "790861",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Hold Me Tight",
       "tmdb_id": "756651",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "FernGully: The Last Rainforest",
       "tmdb_id": "13225",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -727,31 +813,31 @@
     {
       "film_name": "Chip 'n Dale: Rescue Rangers",
       "tmdb_id": "420821",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Extract",
       "tmdb_id": "12569",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Decameron",
       "tmdb_id": "526537",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Zootopia",
       "tmdb_id": "269149",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "A Room with a View",
       "tmdb_id": "11257",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -763,43 +849,43 @@
     {
       "film_name": "The VelociPastor",
       "tmdb_id": "457712",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Vampire's Kiss",
       "tmdb_id": "7091",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Tiny Furniture",
       "tmdb_id": "47607",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Click",
-      "tmdb_id": "9339",
+      "tmdb_id": "1289359",
       "date_added": "",
       "availability": "Not in Library"
     },
     {
       "film_name": "The Royal Tenenbaums",
       "tmdb_id": "9428",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Mamma Mia!",
       "tmdb_id": "11631",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Lincoln",
       "tmdb_id": "340036",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -811,31 +897,31 @@
     {
       "film_name": "The Last of the Mohicans",
       "tmdb_id": "9361",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Okja",
       "tmdb_id": "387426",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Inception",
       "tmdb_id": "27205",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Gone Girl",
       "tmdb_id": "210577",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Arrival",
       "tmdb_id": "329865",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -847,129 +933,37 @@
     {
       "film_name": "The Suicide Squad",
       "tmdb_id": "436969",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "My Neighbor Totoro",
       "tmdb_id": "8392",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Lost in Translation",
       "tmdb_id": "153",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Swingers",
       "tmdb_id": "93685",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Chef",
       "tmdb_id": "1367841",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Clueless",
       "tmdb_id": "9603",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    }
-  ],
-  "Serious movie time \ud83c\udf7f": [
-    {
-      "film_name": "Y Tu Mam\u00e1 Tambi\u00e9n",
-      "tmdb_id": "1391",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Call Me by Your Name",
-      "tmdb_id": "398818",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Mother",
-      "tmdb_id": "698885",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "2001: A Space Odyssey",
-      "tmdb_id": "62",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Mulholland Drive",
-      "tmdb_id": "1018",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "The Cremator",
-      "tmdb_id": "775517",
-      "date_added": "",
-      "availability": "Not in Library"
-    },
-    {
-      "film_name": "Demons",
-      "tmdb_id": "104548",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Funeral Parade of Roses",
-      "tmdb_id": "1556",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Tokyo Story",
-      "tmdb_id": "18148",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Mad God",
-      "tmdb_id": "846867",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Videodrome",
-      "tmdb_id": "837",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Paisan",
-      "tmdb_id": "8429",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Only Angels Have Wings",
-      "tmdb_id": "43832",
-      "date_added": "",
-      "availability": "Not in Library"
-    },
-    {
-      "film_name": "Barry Lyndon",
-      "tmdb_id": "3175",
-      "date_added": "jul 23 2025 06:14pm",
-      "availability": "Available in Library"
-    },
-    {
-      "film_name": "Embrace of the Serpent",
-      "tmdb_id": "336808",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -977,19 +971,19 @@
     {
       "film_name": "The Cruise",
       "tmdb_id": "1080838",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Bridget Jones's Diary",
       "tmdb_id": "634",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Office Space",
       "tmdb_id": "1542",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -997,7 +991,7 @@
     {
       "film_name": "Out of the Past",
       "tmdb_id": "678",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
@@ -1008,7 +1002,7 @@
     },
     {
       "film_name": "Click",
-      "tmdb_id": "9339",
+      "tmdb_id": "1289359",
       "date_added": "",
       "availability": "Not in Library"
     },
@@ -1021,37 +1015,37 @@
     {
       "film_name": "The Batman",
       "tmdb_id": "414906",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Dune",
       "tmdb_id": "438631",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Drive",
       "tmdb_id": "64690",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "The Breakfast Club",
       "tmdb_id": "2108",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Tron",
       "tmdb_id": "97",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     },
     {
       "film_name": "Swingers",
       "tmdb_id": "93685",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ],
@@ -1059,7 +1053,7 @@
     {
       "film_name": "Boys Don't Cry",
       "tmdb_id": "226",
-      "date_added": "jul 23 2025 06:14pm",
+      "date_added": "jul 25 2025 01:21pm",
       "availability": "Available in Library"
     }
   ]
