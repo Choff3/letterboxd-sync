@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from plexapi.server import PlexServer
 from dotenv import load_dotenv
+import logging
 
 # Setup paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -12,8 +13,8 @@ LISTS_DIR = BASE_DIR  # The lists/ directory is the same as this script's direct
 os.makedirs(LISTS_DIR, exist_ok=True)
 
 LIST_SLUGS_FILE = os.path.join(BASE_DIR, 'letterboxd_lists.txt')
-LISTS_CACHE_FILE = os.path.join(LISTS_DIR, 'letterboxd_lists_cache.json')
-PLEX_LIST_CACHE_FILE = os.path.join(LISTS_DIR, 'plex_list_cache.json')
+LISTS_CACHE_FILE = os.path.join(os.path.dirname(BASE_DIR), 'cache', 'letterboxd_lists_cache.json')
+PLEX_LIST_CACHE_FILE = os.path.join(os.path.dirname(BASE_DIR), 'cache', 'plex_list_cache.json')
 
 # Load environment variables
 load_dotenv()
@@ -27,6 +28,11 @@ TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')
 RATE_LIMIT_DELAY = 2
 MAX_RETRIES = 3
 RETRY_DELAY = 30
+
+RATE_LIMIT_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'logs', 'letterboxd-rate-limit')
+def log_rate_limit_event(message):
+    with open(RATE_LIMIT_LOG, 'a') as f:
+        f.write(f"{datetime.now().strftime('%I:%M%p %B %d, %Y')} {message}\n")
 
 def test_scrape_lists_page_to_json():
     """Scrape all pages of the user's Letterboxd lists, extract list names and links, and save as JSON in list_names.json. Uses robust rate limiting and retry logic."""
@@ -47,7 +53,7 @@ def test_scrape_lists_page_to_json():
             try:
                 response = requests.get(page_url, timeout=30)
                 if response.status_code == 429:
-                    print(f"[RATE LIMIT] Hit rate limit on attempt {attempt + 1}. Waiting {RETRY_DELAY} seconds...")
+                    log_rate_limit_event(f"Hit rate limit on attempt {attempt + 1}. Waiting {RETRY_DELAY} seconds...")
                     import time; time.sleep(RETRY_DELAY)
                     continue
                 response.raise_for_status()
@@ -85,7 +91,7 @@ def test_scrape_lists_page_to_json():
         # If we broke out of the retry loop due to no next page, stop
         if not (pagination and next_link):
             break
-    output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'list_names.json')
+    output_file = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'cache', 'list_names.json')
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(list_objs, f, indent=2)
     print(f"[INFO] Saved list names and URLs to {output_file}")

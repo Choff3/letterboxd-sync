@@ -10,8 +10,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_cache.json')
-TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
+LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_watchlist_cache.json')
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_watchlist_cache.json')
 
 def get_tmdb_id_from_api(title, year=None, api_key=None):
     if not api_key:

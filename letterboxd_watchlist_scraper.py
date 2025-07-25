@@ -8,13 +8,14 @@ from tqdm import tqdm
 from dotenv import load_dotenv
 import datetime
 import math
+import logging
 
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-CACHE_FILE = os.path.join(CACHE_DIR, 'letterboxd_cache.json')
+CACHE_FILE = os.path.join(CACHE_DIR, 'letterboxd_watchlist_cache.json')
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')  # Optional TMDB API key for better lookups
 
 # Rate limiting configuration
@@ -22,9 +23,14 @@ RATE_LIMIT_DELAY = 2  # seconds between requests
 MAX_RETRIES = 3
 RETRY_DELAY = 30  # seconds to wait on rate limit
 
+RATE_LIMIT_LOG = os.path.join(BASE_DIR, 'logs', 'letterboxd-rate-limit')
+def log_rate_limit_event(message):
+    with open(RATE_LIMIT_LOG, 'a') as f:
+        f.write(f"{datetime.datetime.now().strftime('%I:%M%p %B %d, %Y')} {message}\n")
+
 def load_cache():
     """
-    Load the film cache from the CACHE_FILE (film_cache.json).
+    Load the film cache from the CACHE_FILE (letterboxd_watchlist_cache.json).
     Returns a dictionary mapping film slugs or names to their cached data.
     """
     if os.path.exists(CACHE_FILE):
@@ -37,7 +43,7 @@ def load_cache():
 
 def save_cache(cache):
     """
-    Save the given cache dictionary to the CACHE_FILE (film_cache.json).
+    Save the given cache dictionary to the CACHE_FILE (letterboxd_watchlist_cache.json).
     """
     with open(CACHE_FILE, 'w') as f:
         json.dump(cache, f, indent=2)
@@ -238,7 +244,7 @@ def fetch_page_with_retry(url, page_num=None, max_retries=MAX_RETRIES):
             
             # Check for rate limiting (429 status code)
             if response.status_code == 429:
-                print(f"[RATE LIMIT] Hit rate limit on attempt {attempt + 1}. Waiting {RETRY_DELAY} seconds...")
+                log_rate_limit_event(f"Hit rate limit on attempt {attempt + 1}. Waiting {RETRY_DELAY} seconds...")
                 time.sleep(RETRY_DELAY)
                 continue
             
@@ -256,7 +262,7 @@ def fetch_page_with_retry(url, page_num=None, max_retries=MAX_RETRIES):
     
     return None
 
-def scrape_list(list_url):
+def scrape_letterboxd_watchlist(list_url):
     """
     Scrape all pages of the Letterboxd watchlist with pagination and rate limiting.
     Returns a list of all films or None if scraping fails.

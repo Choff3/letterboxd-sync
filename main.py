@@ -2,19 +2,19 @@ import os
 import logging
 from dotenv import load_dotenv
 import sys
-from logger import setup_logging, get_logger
+from logger import setup_logging, get_logger, cleanup_old_logs
 
 # Set up absolute paths for cache files
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
-LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_cache.json')
-TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
-PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
+LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_watchlist_cache.json')
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_watchlist_cache.json')
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_watchlist_cache.json')
 
 # Import all modules
-from list_scraper import scrape_list
+from letterboxd_watchlist_scraper import scrape_letterboxd_watchlist
 from tmdb_lookup_from_letterboxd import tmdb_lookup_all
-from plex_playlist import main as plex_playlist_main
+from plex_watchlist import main as plex_watchlist_main
 from overseerr_monitor import overseerr_monitor_add_from_plex_cache
 # Add import for the new multi-list sync
 from lists.letterboxd_lists_to_plex import main as letterboxd_lists_to_plex_main
@@ -43,7 +43,7 @@ def main():
         list_url = f"https://letterboxd.com/{letterboxd_username}/watchlist/"
         logger.info(f"Scraping Letterboxd watchlist for user: {letterboxd_username}")
         
-        films = scrape_list(list_url)
+        films = scrape_letterboxd_watchlist(list_url)
         if not films:
             logger.error("No films found in watchlist or error occurred during scraping")
             logger.error("Other functions cannot proceed without successful scraping")
@@ -52,6 +52,7 @@ def main():
         logger.info(f"Found {len(films)} films in watchlist")
         logger.info("Letterboxd scraping completed successfully!")
         logger.info("Proceeding to next step...")
+        cleanup_old_logs()
     else:
         logger.info("Skipping Letterboxd scraper (RUN_SCRAPER not enabled)")
         logger.warning("Other functions may fail without fresh Letterboxd data")
@@ -79,6 +80,7 @@ def main():
         found_count = sum(1 for f in tmdb_results if f['tmdb_id'])
         logger.info(f"Found TMDB IDs for {found_count} out of {len(tmdb_results)} films")
         logger.info("TMDB lookup completed successfully!")
+        cleanup_old_logs()
     else:
         logger.info("Skipping TMDB lookup (RUN_TMDB_LOOKUP not enabled)")
     
@@ -89,7 +91,7 @@ def main():
     RUN_PLEX_PLAYLIST = True
     
     if 'RUN_PLEX_PLAYLIST' in locals():
-        logger.info("--- Step 3: Plex Watchlist Creation ---")
+        logger.info("--- Step 3: Plex Playlist Creation ---")
         
         # Check if TMDB cache exists
         if not os.path.exists(TMDB_CACHE):
@@ -105,8 +107,9 @@ def main():
             sys.exit(1)
         
         try:
-            plex_playlist_main()
-            logger.info("Plex watchlist playlist creation completed successfully!")
+            plex_watchlist_main()
+            logger.info("Plex playlist creation completed successfully!")
+            cleanup_old_logs()
         except Exception as e:
             logger.error(f"Error creating Plex playlist: {e}")
             sys.exit(1)
@@ -138,6 +141,7 @@ def main():
         try:
             overseerr_monitor_add_from_plex_cache()
             logger.info("Overseerr requests completed successfully!")
+            cleanup_old_logs()
         except Exception as e:
             logger.error(f"Error processing Overseerr requests: {e}")
             sys.exit(1)
@@ -154,6 +158,7 @@ def main():
         try:
             letterboxd_lists_to_plex_main()
             logger.info("Letterboxd multi-list to Plex sync completed successfully!")
+            cleanup_old_logs()
         except Exception as e:
             logger.error(f"Error in Letterboxd multi-list to Plex sync: {e}")
             sys.exit(1)

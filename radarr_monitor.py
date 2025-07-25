@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_watchlist_cache.json')
 
 def format_date(date=None):
     if not date:
@@ -17,7 +17,7 @@ def format_date(date=None):
 
 def radarr_monitor_add_from_plex_cache():
     """
-    Read plex_cache.json, find movies marked as "Not in Library",
+    Read plex_watchlist_cache.json, find movies marked as "Not in Library",
     request them in Radarr, and update the cache with results.
     """
     load_dotenv()

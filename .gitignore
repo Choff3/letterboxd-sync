@@ -166,3 +166,8 @@ letterboxdStructure.html
 # Ignore all cache files
 cache/
 logs/
+lists/test_list_results.html
+lists/plex_list_cache.json
+lists/list_names.json
+lists/letterboxd_lists.txt
+lists/letterboxd_lists_cache.json

@@ -9,8 +9,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
 os.makedirs(CACHE_DIR, exist_ok=True)
 
-TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_cache.json')
-PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_cache.json')
+TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_watchlist_cache.json')
+PLEX_CACHE = os.path.join(CACHE_DIR, 'plex_watchlist_cache.json')
 PLAYLIST_NAME = 'Letterboxd Watchlist'
 
 load_dotenv()
@@ -174,7 +174,7 @@ def main():
         else:
             print(f"[DEBUG] No items to add to playlist. Playlist not created.")
 
-    # Write results to plex_cache.json
+    # Write results to plex_watchlist_cache.json
     with open(PLEX_CACHE, 'w') as f:
         json.dump(plex_results, f, indent=2)
     print(f"Saved Plex results for {len(plex_results)} films to {PLEX_CACHE}")

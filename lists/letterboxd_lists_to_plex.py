@@ -5,15 +5,21 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from plexapi.server import PlexServer
 from dotenv import load_dotenv
+import logging
 
 # Setup paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 LISTS_DIR = BASE_DIR
 os.makedirs(LISTS_DIR, exist_ok=True)
 
-LIST_NAMES_FILE = os.path.join(LISTS_DIR, 'list_names.json')
-LISTS_CACHE_FILE = os.path.join(LISTS_DIR, 'letterboxd_lists_cache.json')
-PLEX_LIST_CACHE_FILE = os.path.join(LISTS_DIR, 'plex_list_cache.json')
+LIST_NAMES_FILE = os.path.join(os.path.dirname(BASE_DIR), 'cache', 'list_names.json')
+LISTS_CACHE_FILE = os.path.join(os.path.dirname(BASE_DIR), 'cache', 'letterboxd_lists_cache.json')
+PLEX_LIST_CACHE_FILE = os.path.join(os.path.dirname(BASE_DIR), 'cache', 'plex_list_cache.json')
+
+RATE_LIMIT_LOG = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'logs', 'letterboxd-rate-limit')
+def log_rate_limit_event(message):
+    with open(RATE_LIMIT_LOG, 'a') as f:
+        f.write(f"{datetime.now().strftime('%I:%M%p %B %d, %Y')} {message}\n")
 
 # Load environment variables
 load_dotenv()
@@ -73,7 +79,7 @@ def fetch_letterboxd_list_with_pagination_and_tmdb(list_url, list_name):
             try:
                 response = requests.get(page_url, timeout=30)
                 if response.status_code == 429:
-                    print(f"[RATE LIMIT] Hit rate limit. Waiting {RETRY_DELAY} seconds...")
+                    log_rate_limit_event(f"Hit rate limit. Waiting {RETRY_DELAY} seconds...")
                     import time; time.sleep(RETRY_DELAY)
                     continue
                 response.raise_for_status()
