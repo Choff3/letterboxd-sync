@@ -22,7 +22,8 @@ from lists.letterboxd_lists_to_plex import main as letterboxd_lists_to_plex_main
 def main():
     # Setup logging
     debug_mode = os.getenv('DEBUG', '0') == '1'
-    logger = setup_logging(logging.DEBUG if debug_mode else logging.INFO)
+    production_mode = os.getenv('PRODUCTION', '1') == '1'  # Default to production mode
+    logger = setup_logging(logging.DEBUG if debug_mode else logging.INFO, production_mode=production_mode)
     load_dotenv()
     
     logger.info("=== Letterboxd Sync Script ===")

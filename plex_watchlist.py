@@ -4,6 +4,7 @@ import random
 from datetime import datetime
 from plexapi.server import PlexServer
 from dotenv import load_dotenv
+from logger import get_logger
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(BASE_DIR, 'cache')
@@ -23,8 +24,9 @@ def format_date(date=None):
 def main():
     plex_host = os.getenv('PLEX_HOST')
     plex_token = os.getenv('PLEX_TOKEN')
-    print(f"[DEBUG] PLEX_HOST: {plex_host}")
-    print(f"[DEBUG] PLEX_TOKEN: {plex_token[:6]}... (truncated)")
+    logger = get_logger()
+    logger.debug(f"PLEX_HOST: {plex_host}")
+    logger.debug(f"PLEX_TOKEN: {plex_token[:6]}... (truncated)")
 
     # Load TMDB cache
     if not os.path.exists(TMDB_CACHE):
@@ -32,7 +34,7 @@ def main():
         return
     with open(TMDB_CACHE, 'r') as f:
         films = json.load(f)
-    print(f"[DEBUG] Loaded {len(films)} films from TMDB cache.")
+    logger.debug(f"Loaded {len(films)} films from TMDB cache.")
 
     try:
         server = PlexServer(plex_host, plex_token)

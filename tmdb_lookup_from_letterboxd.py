@@ -3,6 +3,7 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
+from logger import get_logger
 
 load_dotenv()
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', '')
@@ -14,8 +15,9 @@ LETTERBOXD_CACHE = os.path.join(CACHE_DIR, 'letterboxd_watchlist_cache.json')
 TMDB_CACHE = os.path.join(CACHE_DIR, 'tmdb_watchlist_cache.json')
 
 def get_tmdb_id_from_api(title, year=None, api_key=None):
+    logger = get_logger()
     if not api_key:
-        print("[TMDB] No API key provided. Skipping TMDB lookup.")
+        logger.warning("No API key provided. Skipping TMDB lookup.")
         return None
     try:
         search_title = re.sub(r'[^\w\s]', '', title).strip()
@@ -29,35 +31,36 @@ def get_tmdb_id_from_api(title, year=None, api_key=None):
         }
         if year and str(year).strip():
             params['year'] = year
-        print(f"[TMDB] Searching for '{title}'" + (f" ({year})" if year and str(year).strip() else "") + "...")
+        logger.debug(f"Searching for '{title}'" + (f" ({year})" if year and str(year).strip() else ""))
         response = requests.get(url, params=params, timeout=10)
         response.raise_for_status()
         results = response.json().get('results', [])
         if results:
-            print(f"[TMDB] Found TMDB ID {results[0]['id']} for '{title}'" + (f" ({year})" if year and str(year).strip() else ""))
+            logger.debug(f"Found TMDB ID {results[0]['id']} for '{title}'")
             return str(results[0]['id'])
         else:
-            print(f"[TMDB] No results for '{title}'" + (f" ({year})" if year and str(year).strip() else ""))
+            logger.debug(f"No results for '{title}'")
     except Exception as e:
-        print(f"[TMDB] API error for '{title}': {e}")
+        logger.error(f"API error for '{title}': {e}")
     return None
 
 def tmdb_lookup_all(letterboxd_cache=LETTERBOXD_CACHE, tmdb_cache=TMDB_CACHE, api_key=None):
+    logger = get_logger()
     if not api_key:
         load_dotenv()
         api_key = os.getenv('TMDB_API_KEY', '')
     if not os.path.exists(letterboxd_cache):
-        print(f"Cache file '{letterboxd_cache}' not found.")
+        logger.error(f"Cache file '{letterboxd_cache}' not found.")
         return []
     with open(letterboxd_cache, 'r') as f:
         films = json.load(f)
-    print(f"Loaded {len(films)} films from {letterboxd_cache}\n")
+    logger.info(f"Loaded {len(films)} films from {letterboxd_cache}")
     tmdb_results = []
     for film in films:
         title = film.get('film_name')
         year = film.get('year')
         if not title or not title.strip():
-            print(f"Skipping: missing title for film: {film}")
+            logger.warning(f"Skipping: missing title for film: {film}")
             continue
         tmdb_id = get_tmdb_id_from_api(title, year, api_key=api_key)
         tmdb_results.append({
@@ -67,7 +70,7 @@ def tmdb_lookup_all(letterboxd_cache=LETTERBOXD_CACHE, tmdb_cache=TMDB_CACHE, ap
         })
     with open(tmdb_cache, 'w') as f:
         json.dump(tmdb_results, f, indent=2)
-    print(f"Saved TMDB results for {len(tmdb_results)} films to {tmdb_cache}")
+    logger.info(f"Saved TMDB results for {len(tmdb_results)} films to {tmdb_cache}")
     return tmdb_results
 
 if __name__ == "__main__":
