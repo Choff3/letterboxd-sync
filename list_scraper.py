@@ -3,17 +3,21 @@ import requests
 import re
 from tqdm import tqdm
 
-def scrape_list(list_link):
+def scrape_list(list_link, user_agent):
     print("Scraping "+list_link)
+
+    headers = {
+        'User-Agent': user_agent
+    }
 
     watchlist = []
 
     while True:
-        list_page = requests.get(list_link)
+        list_page = requests.get(list_link, headers=headers)
         
         soup = BeautifulSoup(list_page.content, 'html.parser')
         
-        table = soup.find('ul', class_='poster-list')
+        table = soup.find('ul', class_='grid -p125 -scaled128')
         if table is None:
             return None
         
@@ -22,8 +26,8 @@ def scrape_list(list_link):
         for film in tqdm(films):
 
             film_card = film.find('div').get('data-target-link')
-            film_page = 'https://letterboxd.com/' + film_card
-            filmget = requests.get(film_page)
+            film_page = 'https://letterboxd.com' + film_card
+            filmget = requests.get(film_page, headers=headers)
             film_soup = BeautifulSoup(filmget.content, 'html.parser')
 
             # TODO: Parse the return of below to get the TMDB ID. Then use that to add movies to Plex watchlist and Radarr.

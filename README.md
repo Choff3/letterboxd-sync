@@ -11,6 +11,9 @@ https://support.plex.tv/articles/204059436-finding-an-authentication-token-x-ple
 ### Radarr
 Your API key can be found in Settings > General in the Radarr Web UI.
 
+### User Agent
+A user agent must be provided to get around Letterboxd's bot protection. https://www.whatismybrowser.com/detect/what-is-my-user-agent/
+
 ## Sample run command
 ```
 docker run --rm \
@@ -19,6 +22,7 @@ docker run --rm \
     -e PLEX_HOST='http://{Plex server's IP}:32400' \
     -e RADARR_TOKEN='{radarr api key}' \
     -e RADARR_HOST='http://{Radarr instance IP}:7878' \
+    -e USER_AGENT='{user agent}' \
     choff3/letterboxd-sync
 ```
 

@@ -7,9 +7,10 @@ def main():
 
     # Scrape letterbox watchlist
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
+    user_agent = os.getenv('USER_AGENT')
     list_url = "https://letterboxd.com/"+letterboxd_username+"/watchlist/"
     list_url.split('/')[-3]
-    films = scrape_list(list_url)
+    films = scrape_list(list_url, user_agent)
 
     # Add films to Plex watchlist
     plex_token = os.getenv('PLEX_TOKEN')
