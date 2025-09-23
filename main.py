@@ -1,16 +1,19 @@
 from plex_watchlist import *
-# import os
+import os
 import requests
+import time
 
 def main():
 
     # Scrape letterbox watchlist
-    base_url = "http://letterboxd-list-radarr.onrender.com"
-    letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
-    watchlist_url = base_url+"/"+letterboxd_username+"/watchlist/"
-    watchlist = requests.get(watchlist_url).json()
-
-    # print(watchlist)
+    try:
+        base_url = "http://letterboxd-list-radarr.onrender.com"
+        letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
+        watchlist_url = base_url+"/"+letterboxd_username+"/watchlist/"
+        watchlist = requests.get(watchlist_url).json()
+        print("Successfully grabbed "+watchlist_url)
+    catch:
+        print("Failed to connect to Letterboxd")
 
     # Add films to Plex watchlist
     plex_token = os.getenv('PLEX_TOKEN')
@@ -21,4 +24,7 @@ def main():
         print("Skipping Plex")
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
+        print("Waiting 30 minutes before rechecking Letterboxd")
+        time.sleep(1800)
