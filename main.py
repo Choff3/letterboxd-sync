@@ -1,7 +1,6 @@
 from plex_watchlist import *
 import os
 import requests
-import time
 
 def main():
 
@@ -19,9 +18,9 @@ def main():
     plex_token = os.getenv('PLEX_TOKEN')
     plex_host = os.getenv('PLEX_HOST')
     if plex_token != '' and plex_host != '':
-        radarr_films = plex_watchlist_sync(watchlist,plex_host,plex_token)
+        plex_watchlist_sync(watchlist,plex_host,plex_token)
     else:
-        print("Skipping Plex")
+        print("Missing PLEX_TOKEN and/or PLEX_HOST")
 
 if __name__ == "__main__":
     main()
