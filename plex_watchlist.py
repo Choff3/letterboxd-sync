@@ -29,7 +29,10 @@ def plex_watchlist_sync(letterboxdFilms,plex_host,plex_token):
             print("Added "+film["title"]+" to Plex watchlist")
 
         # Remove from plexImdbs so we are left with films to be removed from Plex watchlist.
-        plexImdbs.remove(film["imdb_id"])
+        try:
+            plexImdbs.remove(film["imdb_id"])
+        except ValueError as e:
+            print("Error removing "+film["imdb_id"]+" from Plex watchlist")
 
     for imdbid in plexImdbs:
         plex_film = server.library.section('Movies').getGuid('imdb://'+imdbid)
