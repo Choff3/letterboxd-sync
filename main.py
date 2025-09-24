@@ -12,7 +12,7 @@ def main():
         watchlist_url = base_url+"/"+letterboxd_username+"/watchlist/"
         watchlist = requests.get(watchlist_url).json()
         print("Successfully grabbed "+watchlist_url)
-    catch:
+    except:
         print("Failed to connect to Letterboxd")
 
     # Add films to Plex watchlist
@@ -24,7 +24,4 @@ def main():
         print("Skipping Plex")
 
 if __name__ == "__main__":
-    while True:
-        main()
-        print("Waiting 30 minutes before rechecking Letterboxd")
-        time.sleep(1800)
+    main()
