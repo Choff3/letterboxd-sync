@@ -1,5 +1,3 @@
 python-dotenv
-tqdm
 requests
-bs4
 plexapi
