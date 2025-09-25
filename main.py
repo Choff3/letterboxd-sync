@@ -15,6 +15,16 @@ def scrape_letterboxd(listUrl):
     except:
         sys.exit("Failed to connect to Letterboxd")
 
+def get_playlist_name(path_string):
+    
+    path_string = path_string.rstrip('/')
+    parts = path_string.split('/')
+    
+    username = parts[0]
+    list_name = parts[-1]
+    
+    return f"{list_name} by {username}"
+
 def plex_watchlist_sync(plex_host,plex_token, letterboxd_username):
 
     watchlist = scrape_letterboxd(letterboxd_username+"/watchlist/")
@@ -80,7 +90,7 @@ def plex_list_sync(plex_host,plex_token, playlists):
         except:
             print("Creating new playlist")
         finally:
-            server.createPlaylist(title=listUrl, items=plexFilms)
+            server.createPlaylist(title=get_playlist_name(listUrl), items=plexFilms)
 
 def main():
 
