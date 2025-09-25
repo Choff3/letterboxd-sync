@@ -1,20 +1,33 @@
+import json
+import sys
 from plexapi.myplex import MyPlexAccount
 from plexapi.server import PlexServer
 import os
 import requests
 
-def plex_watchlist_sync(plex_host,plex_token):
+BASE_URL = "http://letterboxd-list-radarr.onrender.com"
 
-    # Scrape letterbox watchlist
+def scrape_letterboxd(listUrl):
     try:
-        base_url = "http://letterboxd-list-radarr.onrender.com"
-        letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
-        watchlist_url = base_url+"/"+letterboxd_username+"/watchlist/"
-        watchlist = requests.get(watchlist_url).json()
-        print("Successfully grabbed "+watchlist_url)
+        list_url = BASE_URL+"/"+listUrl
+        print("Grabbing "+list_url)
+        return requests.get(list_url).json()
     except:
-        print("Failed to connect to Letterboxd")
-        return
+        sys.exit("Failed to connect to Letterboxd")
+
+def get_playlist_name(path_string):
+    
+    path_string = path_string.rstrip('/')
+    parts = path_string.split('/')
+    
+    username = parts[0]
+    list_name = parts[-1]
+    
+    return f"{list_name} by {username}"
+
+def plex_watchlist_sync(plex_host,plex_token, letterboxd_username):
+
+    watchlist = scrape_letterboxd(letterboxd_username+"/watchlist/")
 
     server = PlexServer(plex_host, plex_token)
 
@@ -49,15 +62,52 @@ def plex_watchlist_sync(plex_host,plex_token):
     for imdbid in plexImdbs:
         plex_film = server.library.section('Movies').getGuid('imdb://'+imdbid)
         plexAccount.removeFromWatchlist(plex_film)
-        print("Removed "+plex_film+" from Plex watchlist")
+        print("Removed "+plex_film.title+" from Plex watchlist")
+
+def plex_list_sync(plex_host,plex_token, playlists):
+
+    server = PlexServer(plex_host, plex_token)
+
+    for listUrl in playlists:
+
+        letterboxdList = scrape_letterboxd(listUrl)
+        
+        plexFilms = []
+
+        for film in letterboxdList:
+            try:
+                plex_film = server.library.section('Movies').getGuid('imdb://'+film["imdb_id"])
+                plexFilms.append(plex_film)
+                print("Found "+film["title"]+" on Plex server")
+            except:
+                print(film["title"]+" could not be found on Plex server")
+                continue
+        
+        try:
+            plexPlaylist = server.playlist(listUrl)
+            plexPlaylist.delete()
+            print("Recreating playlist")
+        except:
+            print("Creating new playlist")
+        finally:
+            server.createPlaylist(title=get_playlist_name(listUrl), items=plexFilms)
 
 def main():
 
-    # Add films to Plex watchlist
     plex_token = os.getenv('PLEX_TOKEN')
     plex_host = os.getenv('PLEX_HOST')
+    letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
+
     if plex_token != '' and plex_host != '':
-        plex_watchlist_sync(plex_host,plex_token)
+        if letterboxd_username:
+            plex_watchlist_sync(plex_host, plex_token, letterboxd_username)
+        else:
+            print("Skipping watchlist")
+        try:
+            playlists = json.loads(os.environ['PLAYLISTS'])
+            plex_list_sync(plex_host, plex_token, playlists)
+        except:
+            print("Skipping playlists")
     else:
         print("Missing PLEX_TOKEN and/or PLEX_HOST")
 
