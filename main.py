@@ -80,7 +80,7 @@ def plex_list_sync(plex_host,plex_token, playlists):
         except:
             print("Creating new playlist")
         finally:
-            server.createPlaylist(listUrl, plexFilms)
+            server.createPlaylist(title=listUrl, items=plexFilms)
 
 def main():
 
