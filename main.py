@@ -1,3 +1,4 @@
+import json
 import sys
 from plexapi.myplex import MyPlexAccount
 from plexapi.server import PlexServer
@@ -85,7 +86,6 @@ def main():
 
     plex_token = os.getenv('PLEX_TOKEN')
     plex_host = os.getenv('PLEX_HOST')
-    playlists = os.getenv('PLAYLISTS')
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
 
     if plex_token != '' and plex_host != '':
@@ -93,9 +93,10 @@ def main():
             plex_watchlist_sync(plex_host, plex_token, letterboxd_username)
         else:
             print("Skipping watchlist")
-        if playlists:
+        try:
+            playlists = json.loads(os.environ['PLAYLISTS'])
             plex_list_sync(plex_host, plex_token, playlists)
-        else:
+        except:
             print("Skipping playlists")
     else:
         print("Missing PLEX_TOKEN and/or PLEX_HOST")
