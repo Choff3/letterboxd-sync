@@ -5,7 +5,7 @@ from plexapi.server import PlexServer
 import os
 import requests
 
-BASE_URL = "http://letterboxd-list-radarr.onrender.com"
+BASE_URL = os.getenv('BASE_URL')
 
 def scrape_letterboxd(listUrl):
     try:

@@ -12,5 +12,6 @@ docker run --rm \
     -e LETTERBOXD_USERNAME='{Letterboxd username}' \
     -e PLEX_TOKEN='{Plex token}' \
     -e PLEX_HOST='http://{Plex server's IP}:32400' \
+    -e BASE_URL='http://localhost:5000' \ # optional local hosted version of screeny05/letterboxd-list-radarr
     choff3/letterboxd-sync
 ```
