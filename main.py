@@ -2,6 +2,7 @@ import json
 import sys
 from plexapi.myplex import MyPlexAccount
 from plexapi.server import PlexServer
+from plexapi.exceptions import BadRequest
 import os
 import requests
 
@@ -50,14 +51,16 @@ def plex_watchlist_sync(plex_host,plex_token, letterboxd_username):
         if film["imdb_id"] in plexImdbs:
             print(film["title"]+" is already on Plex watchlist")
         else:
-            plexAccount.addToWatchlist(plex_film)
-            print("Added "+film["title"]+" to Plex watchlist")
+            try:
+                plexAccount.addToWatchlist(plex_film)
+                print("Added "+film["title"]+" to Plex watchlist")
+            except BadRequest as e:
+                print(film["title"]+" is already on Plex watchlist")
 
-        # Remove from plexImdbs so we are left with films to be removed from Plex watchlist.
         try:
             plexImdbs.remove(film["imdb_id"])
         except ValueError as e:
-            print("Error removing "+film["title"]+" from Plex watchlist")
+            pass
 
     for imdbid in plexImdbs:
         plex_film = server.library.section('Movies').getGuid('imdb://'+imdbid)
