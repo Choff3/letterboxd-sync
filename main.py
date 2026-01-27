@@ -12,7 +12,7 @@ def scrape_letterboxd(listUrl):
     try:
         list_url = BASE_URL
         print("Grabbing "+list_url)
-        return requests.get(list_url).json()
+        return requests.get(list_url).json()["movies"][0]
     except:
         sys.exit("Failed to connect to Letterboxd")
 
