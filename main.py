@@ -10,7 +10,7 @@ BASE_URL = os.getenv('BASE_URL')
 
 def scrape_letterboxd(listUrl):
     try:
-        list_url = BASE_URL+"/"+listUrl
+        list_url = BASE_URL
         print("Grabbing "+list_url)
         return requests.get(list_url).json()
     except:
