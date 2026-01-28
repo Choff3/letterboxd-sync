@@ -33,4 +33,4 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         context: "{{defaultContext}}"
-        tags: ghcr.io/${{ steps.repo_name.outputs.lowercase }}:${{ github.base_ref }}
+        tags: ghcr.io/${{ steps.repo_name.outputs.lowercase }}:${{ github.ref_name }}
