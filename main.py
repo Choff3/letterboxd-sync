@@ -5,13 +5,10 @@ from plexapi.server import PlexServer
 import os
 import requests
 
-BASE_URL = os.getenv('BASE_URL')
-
 def scrape_letterboxd(listUrl):
     try:
-        list_url = BASE_URL
-        print("Grabbing "+list_url)
-        return requests.get(list_url).json()
+        print("Grabbing "+listUrl)
+        return requests.get(listUrl).json()
     except:
         sys.exit("Failed to connect to Letterboxd")
 
@@ -25,9 +22,9 @@ def get_playlist_name(path_string):
     
     return f"{list_name} by {username}"
 
-def plex_watchlist_sync(plex_host,plex_token, letterboxd_username):
+def plex_watchlist_sync(base_url, plex_host, plex_token, letterboxd_username):
 
-    watchlist = scrape_letterboxd(letterboxd_username+"/watchlist/")
+    watchlist = scrape_letterboxd(base_url+"/"+letterboxd_username+"/watchlist/")
 
     server = PlexServer(plex_host, plex_token)
 
@@ -64,7 +61,7 @@ def plex_watchlist_sync(plex_host,plex_token, letterboxd_username):
         plexAccount.removeFromWatchlist(plex_film)
         print("Removed "+plex_film.title+" from Plex watchlist")
 
-def plex_list_sync(plex_host,plex_token, playlists):
+def plex_list_sync(plex_host, plex_token, playlists):
 
     server = PlexServer(plex_host, plex_token)
 
@@ -97,10 +94,11 @@ def main():
     plex_token = os.getenv('PLEX_TOKEN')
     plex_host = os.getenv('PLEX_HOST')
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
+    base_url = os.getenv('BASE_URL', "https://letterboxd-list-radarr.onrender.com")
 
     if plex_token != '' and plex_host != '':
         if letterboxd_username:
-            plex_watchlist_sync(plex_host, plex_token, letterboxd_username)
+            plex_watchlist_sync(base_url, plex_host, plex_token, letterboxd_username)
         else:
             print("Skipping watchlist")
         try:
