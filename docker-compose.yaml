@@ -1,0 +1,16 @@
+services:
+    letterboxd-sync:
+        image: ghcr.io/choff3/letterboxd-sync:latest
+        environment:
+            - BASE_URL=http://letterboxd-list:5000
+        depends_on:
+            - redis
+            - letterboxd-list
+    letterboxd-list:
+        image: screeny05/letterboxd-list-radarr:latest
+        environment:
+            - REDIS_URL=redis://redis:6379
+        depends_on:
+            - redis
+    redis:
+        image: redis:6.0
