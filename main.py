@@ -94,7 +94,7 @@ def main():
     plex_token = os.getenv('PLEX_TOKEN')
     plex_host = os.getenv('PLEX_HOST')
     letterboxd_username = os.getenv('LETTERBOXD_USERNAME')
-    base_url = os.getenv('BASE_URL', "http://letterboxd-list:5533")
+    base_url = os.getenv('BASE_URL', "http://letterboxd-list:5000")
 
     if plex_token != '' and plex_host != '':
         if letterboxd_username:

@@ -3,7 +3,7 @@ FROM python:3.11-alpine
 ENV LETTERBOXD_USERNAME=''
 ENV PLEX_TOKEN=''
 ENV PLEX_HOST=''
-ENV BASE_URL='http://letterboxd-list:5533'
+ENV BASE_URL='http://letterboxd-list:5000'
 ENV CRON_SCHEDULE='30 * * * *'
 
 WORKDIR /usr/src/app
