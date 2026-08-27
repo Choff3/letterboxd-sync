@@ -25,11 +25,16 @@ jobs:
         username: ${{github.repository_owner}}
         password: ${{secrets.GITHUB_TOKEN}}
 
-    - name: Convert repo name to lowercase for ghcr
-      id: repo_name
-      uses: ASzc/change-string-case-action@v6
+    - name: Docker metadata
+      id: meta
+      uses: docker/metadata-action@v5
       with:
-        string: ${{ github.repository }}
+        images: ghcr.io/${{ github.repository }}
+        flavor: |
+          lower=true
+        tags: |
+          type=raw,value=${{ github.ref_name }}
+          type=raw,value=latest,enable=${{ github.ref_name == 'main' }}
 
     - name: Build and push Container
       uses: docker/build-push-action@v5
@@ -37,4 +42,5 @@ jobs:
         platforms: linux/amd64,linux/arm64
         push: true
         context: "{{defaultContext}}"
-        tags: ghcr.io/${{ steps.repo_name.outputs.lowercase }}:${{ github.ref_name }}
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
