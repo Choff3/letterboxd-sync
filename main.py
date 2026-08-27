@@ -57,9 +57,12 @@ def plex_watchlist_sync(base_url, plex_host, plex_token, letterboxd_username):
             print("Error removing "+film["title"]+" from Plex watchlist")
 
     for imdbid in plexImdbs:
-        plex_film = server.library.section('Movies').getGuid('imdb://'+imdbid)
-        plexAccount.removeFromWatchlist(plex_film)
-        print("Removed "+plex_film.title+" from Plex watchlist")
+        try:
+            plex_film = server.library.section('Movies').getGuid('imdb://'+imdbid)
+            plexAccount.removeFromWatchlist(plex_film)
+            print("Removed "+plex_film.title+" from Plex watchlist")
+        except:
+            print("Error removing "+imdbid+" from Plex watchlist")
 
 def plex_list_sync(plex_host, plex_token, playlists):
 
