@@ -27,17 +27,15 @@ jobs:
 
     - name: Docker metadata
       id: meta
-      uses: docker/metadata-action@v5
+      uses: docker/metadata-action@v6
       with:
         images: ghcr.io/${{ github.repository }}
-        flavor: |
-          lower=true
         tags: |
           type=raw,value=${{ github.ref_name }}
           type=raw,value=latest,enable=${{ github.ref_name == 'main' }}
 
     - name: Build and push Container
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         platforms: linux/amd64,linux/arm64
         push: true
