@@ -11,6 +11,8 @@ services:
             - letterboxd-list
     letterboxd-list:
         image: screeny05/letterboxd-list-radarr:latest
+        ports:
+            - 5533:5000
         environment:
             - REDIS_URL=redis://redis:6379
         depends_on:
