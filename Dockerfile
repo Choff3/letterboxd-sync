@@ -3,7 +3,7 @@ FROM python
 ENV LETTERBOXD_USERNAME=''
 ENV PLEX_TOKEN=''
 ENV PLEX_HOST=''
-ENV BASE_URL='http://letterboxd-list-radarr.onrender.com'
+ENV BASE_URL='http://letterboxd-list:5000'
 
 WORKDIR /usr/src/app
 
