@@ -3,9 +3,9 @@ services:
         image: ghcr.io/choff3/letterboxd-sync:latest
         environment:
             - REDIS_URL=redis://redis:6379
-            - LETTERBOXD_USERNAME=''
-            - PLEX_TOKEN=''
-            - PLEX_HOST=''
+            - LETTERBOXD_USERNAME=${LETTERBOXD_USERNAME}
+            - PLEX_TOKEN=${PLEX_TOKEN}
+            - PLEX_HOST=${PLEX_HOST}
         depends_on:
             - redis
             - letterboxd-list
