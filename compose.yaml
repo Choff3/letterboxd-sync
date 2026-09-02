@@ -1,6 +1,7 @@
 services:
     letterboxd-sync:
         image: ghcr.io/choff3/letterboxd-sync:latest
+        restart: unless-stopped
         environment:
             - LETTERBOXD_USERNAME=${LETTERBOXD_USERNAME}
             - PLEX_TOKEN=${PLEX_TOKEN}
@@ -10,6 +11,7 @@ services:
             - letterboxd-list
     letterboxd-list:
         image: screeny05/letterboxd-list-radarr:latest
+        restart: unless-stopped
         ports:
             - 5533:5000
         environment:
@@ -18,3 +20,4 @@ services:
             - redis
     redis:
         image: redis:6.0
+        restart: unless-stopped
